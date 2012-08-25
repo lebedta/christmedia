@@ -12,8 +12,6 @@ class VideoForm extends BaseVideoForm
 {
     public function configure()
     {
-
-
         $this->widgetSchema['title'] = new sfWidgetFormInput();
         $this->widgetSchema['description'] = new sfWidgetFormTextarea();
         $this->widgetSchema['scrinshot'] = new sfWidgetFormInputFile(array('label' => 'Скриншот'));
