@@ -51,7 +51,8 @@ Video:
     is_active:          { type: boolean, default: false }
     is_converted:       { type: boolean, default: false }
     is_edit:            { type: boolean, default: false }
-    user_id:            { type: integer, notnull: true, unique: true }
+    status:             { type: enum(11), values:['in_progress', 'complete', 'convert'], default: 'in_progress' }
+    user_id:            { type: integer, unique: true }
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: sfGuardUser }
     Youtube:            { onDelete: CASCADE, local: id, foreign: video_id, foreignAlias: Youtube, type: one }

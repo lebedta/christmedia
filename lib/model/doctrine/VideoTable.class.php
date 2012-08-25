@@ -16,4 +16,12 @@ class VideoTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Video');
     }
+
+    public static function getVideos()
+    {
+        return Doctrine_Query::create()
+            ->select('*')
+            ->from('Video')
+            ->execute();
+    }
 }

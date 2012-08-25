@@ -17,6 +17,28 @@ class videoActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    $this->forward('default', 'module');
+      $this->videos = VideoTable::getVideos();
   }
+
+  public function executeUploadVideo(sfWebRequest $request)
+  {
+      $this->form = new VideoForm();
+      //$this->form->setDefault('user_id', 2);
+      if($request->isMethod("post"))
+      {
+          $this->form->bind($request->getParameter($this->form->getName()), $request->getFiles($this->form->getName()));
+
+          if($this->form->isValid())
+          {
+              $this->form->save();
+              $this->redirect("@videos");
+          }
+          else
+          {
+              $this->getUser()->setFlash('error', 'The form is invalid');
+          }
+      }
+  }
+
+
 }
