@@ -15,8 +15,25 @@ class youtubeActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeIndex(sfWebRequest $request)
+
+  public function executeYoutubeVideo(sfWebRequest $request)
   {
-    $this->forward('default', 'module');
+      $this->form = new YoutubeForm();
+      //$this->form->setDefault('user_id', 2);
+      $this->form->setDefault('download', true);
+      if($request->isMethod("post"))
+      {
+          $this->form->bind($request->getParameter($this->form->getName()), $request->getFiles($this->form->getName()));
+
+          if($this->form->isValid())
+          {
+              $this->form->save();
+              $this->redirect("@videos");
+          }
+          else
+          {
+                $this->getUser()->setFlash('error', 'The form is invalid');
+          }
+      }
   }
 }

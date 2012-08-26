@@ -1,5 +1,6 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
+
 # video
 videos:
     url: /videos
@@ -8,6 +9,11 @@ videos:
 upload_video:
   url: /video/upload
   param: { module: video, action: uploadVideo }
+
+#youtube
+youtube_video:
+  url: /youtube/upload
+  param: { module: youtube, action: youtubeVideo }
 
 
 profile:

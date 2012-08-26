@@ -66,7 +66,7 @@ Youtube:
     active:             { type: boolean, default: false }
     download:           { type: boolean, default: false }
     is_edit:            { type: boolean, default: false }
-    user_id:            { type: integer, notnull: true, unique: true }
+    user_id:            { type: integer, unique: true }
     video_id:           { type: integer, unique: true }
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: sfGuardUser }
