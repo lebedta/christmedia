@@ -19,7 +19,7 @@ class VideoForm extends BaseVideoForm
         $this->widgetSchema['user_id'] = new sfWidgetFormInputHidden();
 
         $this->validatorSchema['scrinshot'] = new sfValidatorFile(array(
-            'required'   => true,
+            'required'   => false,
             'path'       => sfConfig::get('sf_upload_dir').'/video',
             'mime_types' => 'web_images'));
         $this->validatorSchema['file'] = new sfValidatorFile(array(
@@ -35,7 +35,6 @@ class VideoForm extends BaseVideoForm
         parent::doSave($con);
 
         $video = $this->getValue('file');
-
         $video_name = substr($video, strrpos($video, '/') +1);
         $temp = explode('.', $video_name);
         if($temp[1] == 'flv')

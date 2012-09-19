@@ -22,6 +22,19 @@ class VideoTable extends Doctrine_Table
         return Doctrine_Query::create()
             ->select('*')
             ->from('Video')
+            ->where("is_converted = ?", false)
+            ->addWhere("is_active = ?", false)
             ->execute();
+    }
+
+    public static function getConvertVideo()
+    {
+        return Doctrine_Query::create()
+            ->select("*")
+            ->from("Video")
+            ->where("is_converted = ?", true)
+            ->addWhere("is_edit = ?", false)
+            ->execute();
+
     }
 }

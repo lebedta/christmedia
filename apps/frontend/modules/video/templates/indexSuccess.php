@@ -5,6 +5,6 @@
 
 <?php foreach($videos as $video): ?>
 <li>
-    <a href="<?php // echo url_for('@video?id='.$video->getId()); ?>"><?php echo $video->getFile(); ?></a>
+    <a href="<?php echo url_for('@view_video?video_id='.$video->getId()); ?>"><?php echo $video->getFile(); ?></a>
 </li>
 <?php endforeach ?>

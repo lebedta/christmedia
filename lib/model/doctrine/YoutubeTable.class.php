@@ -16,4 +16,15 @@ class YoutubeTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Youtube');
     }
+
+    public static function getUploadFile()
+    {
+        return Doctrine_Query::create()
+            ->select("*")
+            ->from("Youtube")
+            ->where("is_edit = ?", false)
+            ->addWhere("video_id is null")
+            ->addWhere("download = ?", true)
+            ->execute();
+    }
 }
