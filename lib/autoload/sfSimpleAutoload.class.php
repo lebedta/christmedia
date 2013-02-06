@@ -120,7 +120,7 @@ class sfSimpleAutoload
     {
       try
       {
-        require $this->classes[$class];
+  //      require $this->classes[$class];
       }
       catch (sfException $e)
       {

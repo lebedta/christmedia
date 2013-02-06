@@ -5,6 +5,15 @@
 
 <?php foreach($videos as $video): ?>
 <li>
-    <a href="<?php echo url_for('@view_video?video_id='.$video->getId()); ?>"><?php echo $video->getFile(); ?></a>
+    <span>
+        <a href="<?php echo url_for('@view_video?video_id='.$video->getId()); ?>">
+            <?php echo $video->getTitle(); ?>
+            <div style="width: 50px; height: 50px;">
+                <?php echo image_tag('/uploads/scrinshot/'.$video->getScrinshot()->getFile(), array('width'=>'50', 'height'=>'50')); ?>
+            </div>
+        </a>
+        <?php echo $video->getDuration(); ?>
+
+    </span>
 </li>
 <?php endforeach ?>

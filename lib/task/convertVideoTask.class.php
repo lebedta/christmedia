@@ -45,7 +45,7 @@ EOF;
           if($temp[1] != 'flv')
           {
               $new_name = $temp[0].".flv";
-              $path = sfConfig::get('sf_upload_dir').'/video';
+              $path = sfConfig::get('sf_upload_dir').'/video/';
               $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f flv -s 640x480 ".$path.$new_name;
               exec($command . ' 2>&1', $output);
               echo $command;
@@ -54,8 +54,9 @@ EOF;
               $video->setIsConverted(false);
               $video->setStatus('complete');
               $video->setIsEdit(false);
+              $video->setIsActive(true);
               $video->save();
-              unlink($path.$old_name);
+              //unlink($path.$old_name);
           }
       }
   }

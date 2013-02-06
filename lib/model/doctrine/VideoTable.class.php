@@ -21,9 +21,10 @@ class VideoTable extends Doctrine_Table
     {
         return Doctrine_Query::create()
             ->select('*')
-            ->from('Video')
+            ->from('Video v')
             ->where("is_converted = ?", false)
-            ->addWhere("is_active = ?", false)
+            ->addWhere("is_active = ?", true)
+            ->addWhere('is_scrinshot = ?', true)
             ->execute();
     }
 
@@ -37,4 +38,16 @@ class VideoTable extends Doctrine_Table
             ->execute();
 
     }
+
+    public static function getVideosNeadScrinshot()
+    {
+        return Doctrine_Query::create()
+            ->select('*')
+            ->from('Video')
+            ->where("is_converted = ?", false)
+            ->addWhere("is_active = ?", true)
+            ->addWhere('is_scrinshot = ?', false)
+            ->execute();
+    }
+
 }

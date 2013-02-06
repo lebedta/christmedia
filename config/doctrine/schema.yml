@@ -46,13 +46,14 @@ Video:
   columns:
     title:              { type: string(255), notnull: true }
     description:        { type: text, notnull: true }
-    scrinshot:          { type: string(255), notnull: true }
     file:               { type: string(255), notnull: true }
     is_active:          { type: boolean, default: false }
     is_converted:       { type: boolean, default: false }
     is_edit:            { type: boolean, default: false }
     status:             { type: enum(11), values:['in_progress', 'complete', 'convert'], default: 'in_progress' }
     user_id:            { type: integer, unique: true }
+    duration:          { type: integer}
+    is_scrinshot:      { type: boolean, default: false }
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: sfGuardUser }
     Youtube:            { onDelete: CASCADE, local: id, foreign: video_id, foreignAlias: Youtube, type: one }
@@ -61,7 +62,6 @@ Youtube:
   columns:
     title:              { type: string(255), notnull: true }
     description:        { type: text, notnull: true }
-    scrinshot:          { type: string(255), notnull: true }
     link_youtube:       { type: string(255), notnull: true }
     active:             { type: boolean, default: false }
     download:           { type: boolean, default: false }
@@ -71,3 +71,13 @@ Youtube:
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: sfGuardUser }
     Video:            { onDelete: CASCADE, local: video_id, foreign: id, foreignAlias: Video, type: one }
+
+Scrinshot:
+  columns:
+    file:           { type: string(255), notnull: true }
+    video_id:      { type: integer }
+  relations:
+     Video:          { onDelete: CASCADE, local: video_id, foreign: id, foreignAlias: Video }
+
+
+

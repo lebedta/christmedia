@@ -30,4 +30,9 @@ class sfGuardUser extends PluginsfGuardUser
         $code->delete();
     }
 
+    public function getFullName()
+    {
+        return $this->getfirstName().' '.$this->getLastName();
+    }
+
 }

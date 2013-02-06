@@ -6,7 +6,7 @@
     <dl>
         <?php  include_partial('video/field', array('field' => $form['title'])) ?>
         <?php  include_partial('video/field', array('field' => $form['description'])) ?>
-        <?php  include_partial('video/field', array('field' => $form['scrinshot'])) ?>
+
         <?php  include_partial('video/field', array('field' => $form['link_youtube'])) ?>
     </dl>
 

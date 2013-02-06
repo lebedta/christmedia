@@ -10,17 +10,18 @@
   </head>
   <body>
 
-    <h1>Sample website</h1>
+    <h1>Video hosting</h1>
+
+    <?php if(sfContext::getInstance()->getUser()->isAuthenticated()):  ?>
+        <?php echo sfContext::getInstance()->getUser()->getGuardUser()->getFullName(); ?>
+        <?php echo link_to("Logout", "@sf_guard_signout"); ?>
+        <?php echo link_to("Videos", "@videos"); ?>
+    <?php else: ?>
+        <?php echo link_to("Registration", "@registration"); ?>
+    <?php endif; ?>
 
     <div>
         <?php echo $sf_content ?>
-    </div>
-
-    <div>
-        Login form:
-        <?php
-            include_component('home', 'loginform');
-        ?>
     </div>
 
   </body>

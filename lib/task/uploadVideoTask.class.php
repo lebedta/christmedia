@@ -39,12 +39,15 @@ EOF;
 
       foreach($videos as $video)
       {
-          $video_id = substr(substr($video['link_youtube'], strpos($video['link_youtube'], 'v=')+2),0,11);
+          $parse=parse_url($video->getLinkYoutube());
+          $video_id = str_replace('v=', 'video_id=', $parse['query']);
+
+          $link = "http://www.youtube.com/get_video_info?".$video_id;
 
           if( $curl = curl_init() )
           {
-              // Задаем ссылку
-              curl_setopt($curl,CURLOPT_URL,"http://www.youtube.com/get_video_info?video_id=".$video_id);
+
+              curl_setopt($curl,CURLOPT_URL, $link);
               // Скачанные данные не выводить поток
               curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
               // Скачиваем
@@ -57,62 +60,59 @@ EOF;
                   $title2=strpos($title, "&");
                   $title=substr($title, 0, $title2);
               }
+
               $title_mas = explode(" ", $title);
               $title=$title_mas[0];
-              $p = explode("url=http://o",$out);
+
+              $p = explode("url=",$out);
+
               $link1=null;
               $link2=null;
               $link3=null;
+              $link_download=null;
               for($i=0; $i <= count($p)-1; $i++)
               {
                   $itag=substr($p[$i], strpos($p[$i], "&itag="), 8);
+
                   if($itag == "&itag=35")
                   {
                       $link1=$i;
+                      $link_download = str_replace('&sig=', '&signature=', $p[$i]);
                       $p[$i]="http://o".substr($p[$i],0,strripos($p[$i], "&itag="))."&".$title;
                   }
                   elseif($itag == "&itag=34")
                   {
                       $link2=$i;
+                      $link_download = str_replace('&sig=', '&signature=', $p[$i]);
                       $p[$i]="http://o".substr($p[$i],0,strripos($p[$i], "&itag="))."&".$title;
                   }
                   elseif($itag == "&itag=5&" || $itag == "&itag=5,")
                   {
                       $link3=$i;
+                      $link_download = str_replace('&sig=', '&signature=', $p[$i]);
                       $p[$i]="http://o".substr($p[$i],0,strripos($p[$i], "&itag="))."&".$title;
                   }
-              }
-
-              if($link1!='')
-              {
-                  $link_download =  $p[$link1];
-              }
-              elseif($link2!='')
-              {
-                  $link_download =  $p[$link2];
-              }
-              elseif($link3!='')
-              {
-                  $link_download =  $p[$link3];
-              }
-              else
-              {
-                  echo "format flv not found";
               }
 
               set_time_limit(0);
               $filename= sha1($video["title"].rand(11111, 99999)).'.flv';
               $fullpath= sfConfig::get('sf_upload_dir').'/video/'.$filename;
-              $data = file_get_contents($link_download);
+              echo $link_download;
+              $data = @file_get_contents($link_download);
               if(file_put_contents($fullpath, $data))
               {
+                  $cmd = "ffmpeg -i " . $fullpath . " 2>&1";
+                  exec($cmd);
+                  if (preg_match('/Duration: ((\d+):(\d+):(\d+))/s', `$cmd`, $time)) {
+                      $total = ($time[2] * 3600) + ($time[3] * 60) + $time[4];
+                  }
 
                   $show_videos = new Video();
                   $show_videos->setTitle($video["title"]);
                   $show_videos->setDescription($video["description"]);
                   $show_videos->setFile($filename);
-                  $show_videos->setScrinshot($video["scrinshot"]);
-                  $show_videos->setIsActive(false);
+                  $show_videos->setDuration($total);
+                  $show_videos->setIsActive(true);
                   $show_videos->setIsConverted(false);
                   $show_videos->setIsEdit(false);
                   $show_videos->setStatus("complete");

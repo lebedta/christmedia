@@ -12,4 +12,14 @@
  */
 class Video extends BaseVideo
 {
+    public function getScrinshot()
+    {
+        return Doctrine_Query::create()
+            ->select('*')
+            ->from('Scrinshot')
+            ->where('video_id = ?', $this->getId())
+            ->orderBy('id')
+            ->limit(1)
+            ->fetchOne();
+    }
 }
