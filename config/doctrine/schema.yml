@@ -1,3 +1,15 @@
+sfGuardUserProfile:
+  columns:
+    avatar:             { type: string(255) }
+    title:              { type: string(255) }
+    location:           { type: string(1024) }
+    experience:         { type: text }
+    skills:             { type: text }
+    interests:          { type: text }
+    active:             { type: boolean, default: true }
+  relations:
+    sfGuardUser:        { onDelete: CASCADE, local: id, foreign: profile_id, foreignAlias: sfGuardUser, type: one }
+
 ActivationCode:
   columns:
     user_id:            { type: integer, notnull: true, unique: true }
@@ -5,58 +17,33 @@ ActivationCode:
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: ActivationCode }
 
-
 Language:
   columns:
     name:               { type: string(255), notnull: true }
     is_active:          { type: boolean, default: true }
-
-Category:
-  columns:
-    name:               { type: string(255), notnull: true }
-    title:              { type: string(255), notnull: true }
-    description:        { type: text, notnull: true }
-  actAs:
-    Timestampable: ~
-    I18n:
-      fields: [title, description]
-
-Article:
-  columns:
-    name:               { type: string(255), notnull: true }
-    title:              { type: string(255), notnull: true }
-    description:        { type: text, notnull: true }
-    content:            { type: text }
-  actAs:
-    Timestampable: ~
-    Taggable: ~
-    I18n:
-      fields: [title, description, content]
-    sfLuceneDoctrineTemplate: ~
-
-ArticleCategory:
-  columns:
-    article_id:         { type: integer, notnull: true}
-    category_id:        { type: integer, notnull: true}
-  relations:
-    Article:            { onDelete: CASCADE, local: article_id, foreign: id, foreignAlias: Article }
-    Category:           { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: Category }
 
 Video:
   columns:
     title:              { type: string(255), notnull: true }
     description:        { type: text, notnull: true }
     file:               { type: string(255), notnull: true }
+    date_upload:        { type: datetime, notnull: true }
+    user_id:            { type: integer, unique: true }
+    duration:           { type: integer }
+    desc_file:          { type: string(255), notnull: false }
     is_active:          { type: boolean, default: false }
     is_converted:       { type: boolean, default: false }
     is_edit:            { type: boolean, default: false }
     status:             { type: enum(11), values:['in_progress', 'complete', 'convert'], default: 'in_progress' }
-    user_id:            { type: integer, unique: true }
-    duration:          { type: integer}
     is_scrinshot:      { type: boolean, default: false }
+    category_id:        { type: integer }
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: sfGuardUser }
     Youtube:            { onDelete: CASCADE, local: id, foreign: video_id, foreignAlias: Youtube, type: one }
+    Category:           { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: Category }
+  actAs:
+    Timestampable: ~
+    Commentable:
 
 Youtube:
   columns:
@@ -71,6 +58,8 @@ Youtube:
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: sfGuardUser }
     Video:            { onDelete: CASCADE, local: video_id, foreign: id, foreignAlias: Video, type: one }
+  actAs:
+     Timestampable: ~
 
 Scrinshot:
   columns:
@@ -78,6 +67,28 @@ Scrinshot:
     video_id:      { type: integer }
   relations:
      Video:          { onDelete: CASCADE, local: video_id, foreign: id, foreignAlias: Video }
+  actAs:
+     Timestampable: ~
+
+Category:
+  columns:
+    title:              { type: string(255), notnull: true }
+    description:        { type: text, notnull: true }
+    parent_id:          { type: integer, default: 0, notnull: true }
+  actAs:
+    Timestampable: ~
+
+Rating:
+  columns:
+    type:     {type: enum(11), values:['video', 'audio', 'book']}
+    video_id: {type: integer, notnull: true }
+    rating:   {type: integer, notnull: true }
+    user_id:  {type: integer, notnull: true }
+  relations:
+    Video:          { onDelete: CASCADE, local: video_id, foreign: id, foreignAlias: Video }
+    sfGuardUser:    { onDelete: CASCADE, local: user_id, foreign: id, class: sfGuardUser }
+  actAs:
+    Timestampable: ~
 
 
 

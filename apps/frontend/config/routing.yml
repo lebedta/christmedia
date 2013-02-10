@@ -4,15 +4,16 @@
 # video
 videos:
     url: /videos
-    param: { module: video, action: index }
+    param: { module: video_list, action: index }
 
+view_video:
+    url: /video_view/:video_id
+    param: { module: video_list, action: viewVideo }
+
+#Upload video
 upload_video:
   url: /video/upload
   param: { module: video, action: uploadVideo }
-
-view_video:
-  url: /video/:video_id
-  param: { module: video, action: viewVideo }
 
 #youtube
 youtube_video:

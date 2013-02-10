@@ -1,27 +1,23 @@
 <?php use_helper('I18N') ?>
 
+<div class="header">
+    <div class="wrapper">
+        <?php if(!$user->isAuthenticated()): ?>
 
-<?php
-    if(!$user->isAuthenticated()):
-?>
-<div id="loginform">
-    <form action="<?php echo url_for('@sf_guard_signin') ?>" method="post">
-        <p>
-            <?php echo $form; ?>
-        </p>
-        <p>
-            <input type="submit"/>
-        </p>
-    </form>
+                <a href="<?php echo url_for('@sf_guard_signin') ?>">Логин</a>
+                <a href="<?php echo url_for("@registration") ?>">Регистрация</a>
+
+        <?php else: ?>
+<!--            <h1 class="logo"><a href="--><?php //echo url_for('@dashboard?domain_name='.sfContext::getInstance()->getUser()->getProfile()->getCompany()->getSubDomain()) ?><!--">--><?php //echo sfContext::getInstance()->getUser()->getProfile()->getCompany()->getName(); ?><!--</a></h1>-->
+            <div class="login-form">
+<!--                <img src="--><?php //echo $user->getGuardUser()->getProfile()->getUserAvatar(32) ?><!--" alt="--><?php //echo $user->getGuardUser()->getFullName(); ?><!--" />-->
+                <span class="user-name">
+                    <?php echo $user->getGuardUser()->getFullName(); ?>
+                </span>
+                <!--<a href="--><?php //echo url_for('@profile') ?><!--">profile</a>-->
+                <!--<a href="--><?php //echo url_for('@user_info?domain_name='.sfContext::getInstance()->getUser()->getProfile()->getCompany()->getSubDomain().'&id='.sfContext::getInstance()->getUser()->getGuardUser()->getId()); ?><!--">profile</a>-->
+                <a href="<?php echo url_for('@sf_guard_signout') ?>">logout</a>
+            </div>
+        <?php endif;?>
+    </div>
 </div>
-
-
-<?php
-    else:
-?>
-        Hello, <?php echo $user->getUsername(); ?>!
-        <a href="<?php echo url_for('@profile') ?>">profile</a>
-        <a href="<?php echo url_for('@sf_guard_signout') ?>">logout</a>
-<?php
-    endif;
-?>

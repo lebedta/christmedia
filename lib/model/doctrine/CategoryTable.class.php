@@ -16,4 +16,11 @@ class CategoryTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Category');
     }
+
+    public static function getCategories()
+    {
+        return Doctrine_Query::create()
+            ->select('*')
+            ->from('Category');
+    }
 }

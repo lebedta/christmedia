@@ -15,17 +15,6 @@ class videoActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeIndex(sfWebRequest $request)
-  {
-      $this->videos = VideoTable::getVideos();
-  }
-
-    public function executeViewVideo(sfWebRequest $request)
-    {
-        $video_id = $request->getUrlParameter('video_id');
-        $this->video = Doctrine_Core::getTable('Video')->find($video_id);
-        $this->forward404Unless($this->video, "Idea not exist");
-    }
 
   public function executeUploadVideo(sfWebRequest $request)
   {

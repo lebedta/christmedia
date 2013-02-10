@@ -31,9 +31,22 @@ all:
     title: "Password change notification"
     message: "You have successfully changed your password in Christmedias project.\n\rYour new password is: %password%\n\r"
 
+  lucene:
+    routes: off
+
   contact_us_default:
     username: 'Guest'
     subject: 'Contact Us Message'
 
-  lucene:
-    routes: off
+  vjCommentPlugin:
+    guardbind:      true
+    restricted:     true
+    list_order:     ASC
+
+  gravatar:
+    enabled:      true
+    default_size: 40
+    default_image: ../web/vjCommentPlugin/images/gravatar_default.png
+
+  items_display: 1
+

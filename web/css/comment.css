@@ -1,0 +1,39 @@
+.comment {
+    border-top: 1px dotted #B1B1B1;
+    clear: both;
+    margin: 0 0 30px;
+    overflow: hidden;
+}
+
+.comment .avtor {
+    border: 1px solid #E4E4E4;
+    box-shadow: 0 0 1px #F3F3F3;
+    color: #333333;
+    float: left;
+    font: 13px/120% BradlyHandITC;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 112px;
+}
+
+.comment .body {
+    color: #333333;
+    font: 13px/150% Arial;
+    margin: 20px 0;
+    padding: 0 0 0 20px;
+}
+
+.comment .reply-quote {
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+.comment .reply-quote a {
+    color: #999999;
+    cursor: pointer;
+    font: 11px Arial;
+    margin: 0 5px;
+    text-decoration: none;
+}

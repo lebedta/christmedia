@@ -1,6 +1,6 @@
 Category:
   Category_1:
-    name: home
+    title: home
     created_at: '2011-11-16 11:21:13'
     updated_at: '2011-11-16 11:21:13'
 Language:
@@ -24,14 +24,3 @@ sfGuardUser:
     last_login: null
     created_at: '2011-09-20 15:40:16'
     updated_at: '2011-09-20 15:40:44'
-CategoryTranslation:
-  CategoryTranslation_1_en:
-    Category: Category_1
-    title: 'Homepage Cetegory'
-    description: 'This category is used to store homepage articles '
-    lang: en
-  CategoryTranslation_1_ru:
-    Category: Category_1
-    title: 'Домашняя страница'
-    description: 'Здесь находятся статьи для домашней страници'
-    lang: ru

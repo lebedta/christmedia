@@ -15,6 +15,15 @@ class VideoForm extends BaseVideoForm
         $this->widgetSchema['title'] = new sfWidgetFormInput();
         $this->widgetSchema['description'] = new sfWidgetFormTextarea();
         $this->widgetSchema['file'] = new sfWidgetFormInputFile(array('label' => 'Видео'));
+        $this->widgetSchema['desc_file'] = new sfWidgetFormInputFile(array('label' => 'Описание'));
+        $this->widgetSchema['category_id'] = new sfWidgetFormDoctrineChoice(array(
+            'model' => 'Category',
+            'query' => CategoryTable::getCategories(),
+            'add_empty' => 'Выберите категорию'
+        ));
+        $this->validatorSchema['category_id'] = new sfValidatorDoctrineChoice(array('required' => true,'model'=>'Category'));
+
+        $this->widgetSchema['date_upload'] = new sfWidgetFormDateTime();
         $this->widgetSchema['user_id'] = new sfWidgetFormInputHidden();
 
         $this->validatorSchema['file'] = new sfValidatorFile(array(
@@ -22,7 +31,12 @@ class VideoForm extends BaseVideoForm
             'path'       => sfConfig::get('sf_upload_dir').'/video',
             'mime_types' => array('video/mpeg','video/mpg','video/mp4','video/flv','video/x-flv','video/avi','video/x-msvideo')));
 
-        $this->useFields(array('title', 'description', 'file'));
+        $this->validatorSchema['desc_file'] = new sfValidatorFile(array(
+            'required'   => false,
+            'path'       => sfConfig::get('sf_upload_dir').'/description',
+            'mime_types' => array('txt')));
+
+        $this->useFields(array('title', 'description', 'category_id', 'file', 'desc_file'));
     }
 
     public function doSave($con = null)
@@ -38,6 +52,8 @@ class VideoForm extends BaseVideoForm
         if (preg_match('/Duration: ((\d+):(\d+):(\d+))/s', `$cmd`, $time)) {
             $total = ($time[2] * 3600) + ($time[3] * 60) + $time[4];
         }
+
+        $this->getObject()->setDateUpload(date('Y-m-d H:m:s'));
 
         if($temp[1] == 'flv')
         {
