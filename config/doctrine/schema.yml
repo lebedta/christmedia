@@ -2,10 +2,7 @@ sfGuardUserProfile:
   columns:
     avatar:             { type: string(255) }
     title:              { type: string(255) }
-    location:           { type: string(1024) }
-    experience:         { type: text }
-    skills:             { type: text }
-    interests:          { type: text }
+    user_cookie_id:     { type: string(255) }
     active:             { type: boolean, default: true }
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: id, foreign: profile_id, foreignAlias: sfGuardUser, type: one }
@@ -78,17 +75,24 @@ Category:
   actAs:
     Timestampable: ~
 
-Rating:
+VideoRating:
   columns:
-    type:     {type: enum(11), values:['video', 'audio', 'book']}
-    video_id: {type: integer, notnull: true }
-    rating:   {type: integer, notnull: true }
-    user_id:  {type: integer, notnull: true }
+    video_id:        { type: integer, notnull: true }
+    rating:          { type: integer, notnull: true }
+    user_cookie_id:  { type: string(255), notnull: true }
   relations:
-    Video:          { onDelete: CASCADE, local: video_id, foreign: id, foreignAlias: Video }
-    sfGuardUser:    { onDelete: CASCADE, local: user_id, foreign: id, class: sfGuardUser }
+    Video:           { onDelete: CASCADE, local: video_id, foreign: id, class: Video }
+    Profile:         { onDelete: CASCADE, local: user_cookie_id, foreign: id, foreignAlias: sfGuardUserProfile }
   actAs:
     Timestampable: ~
 
-
+VideoWatching:
+  columns:
+    video_id:          { type: integer, notnull: true }
+    user_cookie_id:  { type: string(255), notnull: true }
+  relations:
+    Video:           { onDelete: CASCADE, local: video_id, foreign: id, class: Video }
+    Profile:         { onDelete: CASCADE, local: user_cookie_id, foreign: id, foreignAlias: sfGuardUserProfile }
+  actAs:
+    Timestampable: ~
 

@@ -21,7 +21,7 @@
                 <a href="<?php echo url_for('@view_video?video_id='.$video->getId()); ?>">
 
                     <div style="width: 100px; height: 100px;">
-                        <?php echo image_tag('/uploads/scrinshot/'.$video->getScrinshot()->getFile(), array('width'=>'100', 'height'=>'100')); ?>
+                        <?php echo image_tag('/uploads/scrinshot/'.$video->getScrinshot()->getFile(), array('width'=>'120', 'height'=>'90')); ?>
                         <?php echo $video->getTitle(); ?>
                     </div>
                 </a>

@@ -26,5 +26,19 @@ class video_listActions extends sfActions
         $video_id = $request->getUrlParameter('video_id');
         $this->video = Doctrine_Core::getTable('Video')->find($video_id);
         $this->forward404Unless($this->video, "Video not exist");
+
+        if(isset($_COOKIE['myCookie']))
+        {
+            if(!VideoWatchingTable::isWatching($this->video, $_COOKIE['myCookie']))
+            {
+                VideoWatchingTable::setWatching($this->video, $_COOKIE['myCookie']);
+            }
+        }
+        else
+        {
+            $unique = uniqid();
+            $this->getResponse()->setCookie('myCookie', $unique ,time()+60*60*24*30);
+            VideoWatchingTable::setWatching($this->video, $unique);
+        }
     }
 }
