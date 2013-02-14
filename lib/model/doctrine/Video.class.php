@@ -21,4 +21,41 @@ class Video extends BaseVideo
             ->orderBy('id')
             ->execute();
     }
+
+    public function getVideoRating()
+    {
+        $query = Doctrine_Query::create()
+            ->select('AVG(rating)')
+            ->from('VideoRating')
+            ->where('video_id = ?', $this->getId())
+            ->execute(array(), Doctrine::HYDRATE_SINGLE_SCALAR);
+
+        if($query>0)
+        {
+            return $query;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+    public function isVoting()
+    {
+        $query = Doctrine_Query::create()
+            ->select("count(id)")
+            ->from('VideoRating')
+            ->where('video_id = ?', $this->getId())
+            ->andWhere('user_cookie_id = ?', $_COOKIE['myCookie'])
+            ->execute(array(), Doctrine::HYDRATE_SINGLE_SCALAR);
+
+        if($query>0)
+        {
+            return true;
+        }
+        else
+        {
+            return 'false';
+        }
+    }
 }

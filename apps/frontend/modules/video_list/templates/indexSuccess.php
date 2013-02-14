@@ -29,6 +29,14 @@
                 </a>
                 <?php echo $video->getTitle(); ?>
             </span>
+            <div id="star_<?php echo $video->getId(); ?>" class="star"></div>
+            <script type="text/javascript">
+                jQuery('#star_<?php echo $video->getId()?>').raty({
+                    path: "/rating",
+                    score: <?php echo $video->getVideoRating(); ?>,
+                    readOnly: true
+                });
+            </script>
         </li>
     <?php endforeach ?>
 </ul>
@@ -59,9 +67,4 @@
 
         })
    });
-
-
-
-
-
 </script>

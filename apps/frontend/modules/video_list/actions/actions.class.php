@@ -41,4 +41,31 @@ class video_listActions extends sfActions
             VideoWatchingTable::setWatching($this->video, $unique);
         }
     }
+
+    public function executeVoteVideo(sfWebRequest $request)
+    {
+        $result = array("content" => null,
+                        "status" => "false");
+
+        if ($request->isMethod("post"))
+        {
+            $video_id = $request->getUrlParameter('video_id');
+            $video = Doctrine_Core::getTable('Video')->find($video_id);
+
+            $rating = $request->getPostParameter('rat');
+
+            $videoRating = new VideoRating();
+            $videoRating->setRating($rating);
+            $videoRating->setVideo($video);
+            $videoRating->setUserCookieId($_COOKIE['myCookie']);
+            $videoRating->save();
+
+            $result = array(
+                "content" => $video->getVideoRating(),
+                "status" => "Ok",
+            );
+        }
+        $this->renderText(json_encode($result));
+        return sfView::NONE;
+    }
 }

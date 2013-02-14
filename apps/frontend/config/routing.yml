@@ -10,6 +10,10 @@ view_video:
     url: /video_view/:video_id
     param: { module: video_list, action: viewVideo }
 
+vote_video:
+    url: /video_vote/:video_id
+    param: { module: video_list, action: voteVideo }
+
 #Upload video
 upload_video:
   url: /video/upload
