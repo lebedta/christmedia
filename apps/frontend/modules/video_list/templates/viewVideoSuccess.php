@@ -12,6 +12,10 @@
 <h4><?php echo $video->getDescription(); ?> </h4>
 <div id="star_<?php echo $video->getId(); ?>" class="star"></div>
 
+<span>
+    Просмотров: <?php echo $video->getVideoWatching()->count(); ?>
+</span>
+
 <?php include_component('comment', 'list', array('object' => $video, 'i' => 0)) ?>
 
 <a class="btn btn-light-grey pop-up_form new_comment_form" href="#comment_form">Новый комент</a>

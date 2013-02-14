@@ -30,6 +30,9 @@
                 <?php echo $video->getTitle(); ?>
             </span>
             <div id="star_<?php echo $video->getId(); ?>" class="star"></div>
+            <span>
+                Просмотров: <?php echo $video->getVideoWatching()->count(); ?>
+            </span>
             <script type="text/javascript">
                 jQuery('#star_<?php echo $video->getId()?>').raty({
                     path: "/rating",
