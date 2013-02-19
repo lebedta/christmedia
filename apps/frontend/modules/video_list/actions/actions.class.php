@@ -18,7 +18,14 @@ class video_listActions extends sfActions
 
     public function executeIndex(sfWebRequest $request)
     {
-        $this->videos = VideoTable::getVideos();
+        $this->order = $request->getUrlParameter('order');
+        $videos = VideoTable::getVideos($this->order);
+        $items_display = 6;
+
+        $this->videos = new sfDoctrinePager('Video', $items_display);
+        $this->videos->setQuery($videos);
+        $this->videos->setPage($request->getParameter('page_idea', 1));
+        $this->videos->init();
     }
 
     public function executeViewVideo(sfWebRequest $request)

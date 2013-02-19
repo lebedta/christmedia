@@ -17,15 +17,33 @@ class VideoTable extends Doctrine_Table
         return Doctrine_Core::getTable('Video');
     }
 
-    public static function getVideos()
+    public static function getVideos($order)
     {
-        return Doctrine_Query::create()
+        $query = Doctrine_Query::create()
             ->select('*')
             ->from('Video v')
             ->where("is_converted = ?", false)
             ->addWhere("is_active = ?", true)
-            ->addWhere('is_scrinshot = ?', true)
-            ->execute();
+            ->addWhere('is_scrinshot = ?', true);
+        switch($order)
+        {
+            case 'd': $query->orderBy('v.created_at desc');
+                break;
+            case 'v': $query->addSelect("(select count(video_id) from video_watching where v.id = video_id) as watch");
+                      $query->orderBy("watch desc");
+                break;
+            case 'c': $query->addSelect("(select count(record_id) from comment where record_model = 'Video' and record_id = v.id) as comment");
+                      $query->orderBy("comment desc");
+                break;
+            case 'r': $query->addSelect("(select avg(video_id) from video_rating where v.id = video_id) as rating");
+                      $query->orderBy("rating desc");
+                break;
+            default:
+                $query->orderBy('v.created_at desc');
+                break;
+        }
+
+        return $query;
     }
 
     public static function getConvertVideo()

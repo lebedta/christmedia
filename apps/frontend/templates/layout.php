@@ -63,7 +63,8 @@
           </div>
           <div class="footer">
               <div class="wrapper">
-                  <p>powered by <a>ChristMedia</a></p>
+                  <p>@ Christmedia.org-Христианское видео онлайн 2011</p>
+                  <p>Exclusive Hosting Partner-ValcoHosting </p>
               </div>
           </div>
       </div>

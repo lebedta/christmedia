@@ -65,7 +65,7 @@ class BaseCommentComponents extends sfComponents
         $this->count_comments = $this->object->getAllComments(vjComment::getListOrder())->execute();
         $query = $this->object->getAllComments(vjComment::getListOrder())
             ->leftJoin('c.Comment c2 on c.id=c2.reply')
-            //->leftJoin('c.User us')
+            ->leftJoin('c.User us')
             ->leftJoin('u.Profile pr')
             ->leftJoin('c2.User s2 on c2.user_id=s2.id')
             ->leftJoin('s2.Profile p')

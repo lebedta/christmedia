@@ -3,8 +3,8 @@
 
 # video
 videos:
-    url: /videos
-    param: { module: video_list, action: index }
+    url: /videos/:order
+    param: { module: video_list, action: index, order: 'd' }
 
 view_video:
     url: /video_view/:video_id
