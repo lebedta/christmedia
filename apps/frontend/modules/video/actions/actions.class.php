@@ -18,22 +18,24 @@ class videoActions extends sfActions
 
   public function executeUploadVideo(sfWebRequest $request)
   {
+
+      $result = array("content" => "start",
+          "status" => "false");
+
       $this->form = new VideoForm();
+
       if($request->isMethod("post"))
       {
           $this->form->bind($request->getParameter($this->form->getName()), $request->getFiles($this->form->getName()));
-
           if($this->form->isValid())
           {
               $this->form->save();
-              $this->redirect("@videos");
+
+              $result = array("content" => "compleate",
+                               "status" => "ok");
           }
-          else
-          {
-              $this->getUser()->setFlash('error', 'The form is invalid');
-          }
+          $this->renderText(json_encode($result));
+          return sfView::NONE;
       }
   }
-
-
 }
