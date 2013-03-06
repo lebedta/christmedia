@@ -33,6 +33,7 @@ all:
 
   lucene:
     routes: off
+    index: MyIndex
 
   contact_us_default:
     username: 'Guest'

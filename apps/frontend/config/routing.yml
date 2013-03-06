@@ -47,11 +47,11 @@ contact_approv:
 
 #search
 search_advanced:
-  url: /:sf_culture/advanced
+  url: /advanced
   param: { module: sfLucene, action: advanced }
 
 search:
-  url: /:sf_culture/search
+  url: /search
   param: { module: sfLucene, action: index }
 
 #Article full view after search

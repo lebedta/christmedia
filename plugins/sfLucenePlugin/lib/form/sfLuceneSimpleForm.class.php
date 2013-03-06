@@ -22,4 +22,15 @@
 
 class sfLuceneSimpleForm extends sfLuceneSimpleFormBase
 {
+    public function configure()
+    {
+        $choices = array(
+            'all' => 'Everywhere',
+            'video' => 'Videos',
+            'audio' => 'Audios',
+            'blog' => 'Blogs'
+        );
+        $this->widgetSchema['entity'] = new sfWidgetFormChoice(array('choices' => $choices));
+        $this->validatorSchema['entity'] = new sfValidatorChoice(array('choices' => array_keys($choices), 'required' => false));
+    }
 }

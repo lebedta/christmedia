@@ -266,3 +266,86 @@ ul.path li h2 {
     text-shadow: #FFFFFF -1px -1px 1px;
     font-family: Helvetica, Arial;
 }
+
+/*------------------------------------------------------------------------*/
+/*---------------------------------TOP SEARCH-----------------------------*/
+/*------------------------------------------------------------------------*/
+
+form.search-controls {
+    float: right;
+    border: 1px solid #5A7286;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 3px 5px 3px 15px;
+    margin-top: -2px;
+    height: 19px;
+}
+form.search-controls input{
+    background: transparent;
+    border: none;
+    font-size: 11px;
+    color: #666666;
+    padding: 4px 0 0;
+    font-family: Arial;
+    line-height: 14px;
+}
+form.search-controls input[type="text"] {
+    color: #999999;
+    font-style: italic;
+    float: left;
+    height: 20px;
+    padding: 0;
+    line-height: 22px;
+}
+
+form.search-controls input[type="submit"] {
+    margin: 0 0 0 3px;
+    text-transform: uppercase;
+}
+
+form.search-controls select {
+    background: transparent;
+    border: none;
+    font-size: 11px;
+    color: #666666;
+    font-family: Arial;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+form.search-controls .fake-select {
+    background: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.fake-select {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 3px 5px 0 0;
+}
+
+.fake-select select {
+    background: #E8E8E8;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.fake-select .textfield {
+    background: url(../images/select_bg.png) no-repeat right center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font: 12px/23px Helvetica;
+    color: #666;
+    overflow: hidden;
+    padding: 0 20px 0 5px;
+}

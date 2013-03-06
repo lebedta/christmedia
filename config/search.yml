@@ -2,18 +2,18 @@
 
 MyIndex:
   models:
-    Article:
+    Video:
       fields:
         id: unindexed
-        title:              { type: text,  boost: 1.5}
-        description:        { type: text }
-        content:            { type: unstored }
+        title:
+          boost: 1.5
+          type: text
+        description:
+          boost: 1.5
+          type: text
+
 
   index:
-    encoding: UTF-8
-    cultures: [en, ru]
-#    stop_words: [the, an, it]
-#    short_words: 2
-    analyzer: utf8num #text, textnum, utf8, or utf8num
-    case_sensitive: off # on, off
-    mb_string: on # on, off
+    analyzer: utf8num
+    #case_sensitive: off
+    #mb_string: on

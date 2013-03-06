@@ -17,13 +17,13 @@ require_once  sfConfig::get('sf_plugins_dir'). '/sfLucenePlugin/modules/sfLucene
  */
 class sfLuceneComponents extends BasesfLuceneComponents
 {
-  /**
-   * Returns an instance of sfLucene configured for this environment.
-   */
-  protected function getLuceneInstance()
-  {
-    return sfLuceneToolkit::getApplicationInstance();
-  }
+    /**
+     * Returns an instance of sfLucene configured for this environment.
+     */
+    protected function getLuceneInstance()
+    {
+        return sfLuceneToolkit::getApplicationInstance();
+    }
 
     public function executeControls()
     {

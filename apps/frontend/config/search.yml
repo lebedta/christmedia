@@ -3,6 +3,6 @@
 
 MyIndex:
   models:
-    Article:
-      route: @article_view?id=%id%&sf_culture=%culture%
-      partial: article/searchResult
+    Video:
+      route: /video_view/%video_id%
+      partial: video_list/searchResult

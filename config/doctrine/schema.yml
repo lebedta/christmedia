@@ -41,6 +41,7 @@ Video:
   actAs:
     Timestampable: ~
     Commentable:
+    sfLuceneDoctrineTemplate: ~
 
 Youtube:
   columns:
