@@ -17,6 +17,14 @@
     </p>
 </div>    
 <script type="text/javascript">
+    jQuery('#video_file').bind('change', function() {
+        if(this.files[0].size > 1073741824)
+        {
+            call_error_message("Файл прывисил 1Гб ",jQuery("#video_file").parent().prev());
+            error = true;
+        }
+    });
+
     jQuery("#this_form").submit(function(event){
         var error = false;
         if(jQuery("#video_title").val() == "")
@@ -38,6 +46,14 @@
         {
             call_error_message("Загрузите видео",jQuery("#video_file").parent().prev());
             error = true;
+        }
+        else
+        {
+            var ext = $('#video_file').val().split('.').pop().toLowerCase();
+            if(jQuery.inArray(ext, ['mpeg','mpg','mp4','flv', 'avi']) == -1) {
+                call_error_message("Доступные форматы mpeg, mpg, mp4, flv, avi",jQuery("#video_file").parent().prev());
+                error = true;
+            }
         }
 
        if(error == false)

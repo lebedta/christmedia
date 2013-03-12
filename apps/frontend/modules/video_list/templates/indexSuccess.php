@@ -58,8 +58,21 @@
             play : {
                 active: true,
                 auto: false,
-                interval: 800,
-                swap: true
+                interval: 700,
+                swap: true,
+                effect: {
+                    slide: {
+                        // Slide effect settings.
+                        speed: 200
+                        // [number] Speed in milliseconds of the slide animation.
+                    },
+                    fade: {
+                        speed: 200,
+                        // [number] Speed in milliseconds of the fade animation.
+                        crossfade: true
+                        // [boolean] Cross-fade the transition.
+                    }
+                }
             }
         });
         jQuery(".slidesjs-navigation").hide();
@@ -67,7 +80,7 @@
         jQuery(".slider_JS").mouseover(function(){
 
             jQuery(this).find(".slidesjs-play").click();
-
+            return false;
         })
 
         jQuery(".slider_JS").mouseout(function(){
