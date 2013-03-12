@@ -36,7 +36,17 @@ class VideoForm extends BaseVideoForm
             'path'       => sfConfig::get('sf_upload_dir').'/description',
             'mime_types' => array('txt')));
 
-        $this->useFields(array('title', 'description', 'category_id', 'file', 'desc_file'));
+        $this->widgetSchema['filming_place'] = new sfWidgetFormInput();
+        $this->widgetSchema['filming_date'] = new sfWidgetFormDateTime();
+
+        $this->widgetSchema->setLabel("title", "Название");
+        $this->widgetSchema->setLabel("description", "Описание");
+        $this->widgetSchema->setLabel("file", "Видео");
+        $this->widgetSchema->setLabel("category_id", "Выберите категорию");
+        $this->widgetSchema->setLabel("filming_place", "Место сьемки");
+        $this->widgetSchema->setLabel("filming_date", "Дата сьемеи");
+
+        $this->useFields(array('title', 'description', 'category_id', 'file', 'desc_file', 'filming_date', 'filming_place'));
     }
 
     public function doSave($con = null)

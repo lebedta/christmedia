@@ -34,6 +34,8 @@ Video:
     status:             { type: enum(11), values:['in_progress', 'complete', 'convert'], default: 'in_progress' }
     is_scrinshot:      { type: boolean, default: false }
     category_id:        { type: integer }
+    filming_date:       { type: datetime, notnull: false }
+    filming_place:     { type: string(255), notnull: false }
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: sfGuardUser }
     Youtube:            { onDelete: CASCADE, local: id, foreign: video_id, foreignAlias: Youtube, type: one }

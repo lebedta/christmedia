@@ -1,4 +1,4 @@
-<h2>Upload video</h2>
+<h2>Загрузка видео</h2>
 <div class="form">
     <form id="this_form"  name="<?php echo($form->getName()) ?>" method="post" action="<?php echo url_for("@upload_video") ?>" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
         <?php include_partial('video/form', array('form' => $form)) ?>
@@ -10,7 +10,7 @@
 </div>
 <div id="compleate" style="display:none;">
     <p>
-        Ваше виде успешно загружено.
+        Ваше видео загружено, сразу же после серверной обработки это видео появится на странице "Видео"
     </p>
     <p>
         Загрузить еще <?php echo link_to("загрузить","@upload_video"); ?>
