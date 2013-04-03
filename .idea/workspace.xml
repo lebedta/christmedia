@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d98b6da-e5f8-4846-9cf3-a48647dec11a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/sfApplicationConfiguration.class.php" afterPath="$PROJECT_DIR$/lib/config/sfApplicationConfiguration.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/task/convertVideoTask.class.php" afterPath="$PROJECT_DIR$/lib/task/convertVideoTask.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/task/createScrinshotTask.class.php" afterPath="$PROJECT_DIR$/lib/task/createScrinshotTask.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/task/uploadVideoTask.class.php" afterPath="$PROJECT_DIR$/lib/task/uploadVideoTask.class.php" />
     </list>
     <ignored path="christmedia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +32,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sfDatabaseConfigHandler.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/config/sfDatabaseConfigHandler.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="57" selection-start="2148" selection-end="2200" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -71,7 +80,43 @@
       <file leaf-file-name="databases.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/databases.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="25" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+            <state line="8" column="17" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convertVideoTask.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/task/convertVideoTask.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="6" selection-start="293" selection-end="293" vertical-scroll-proportion="0.3529412">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uploadVideoTask.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/task/uploadVideoTask.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="111" selection-start="292" selection-end="397" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createScrinshotTask.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/task/createScrinshotTask.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="117" selection-start="431" selection-end="431" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sfDatabaseManager.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/database/sfDatabaseManager.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="29" selection-start="850" selection-end="850" vertical-scroll-proportion="-3.3333333">
               <folding />
             </state>
           </provider>
@@ -101,6 +146,9 @@
         <option value="$PROJECT_DIR$/lib/model/doctrine/ArticleCategory.class.php" />
         <option value="$PROJECT_DIR$/lib/config/sfApplicationConfiguration.class.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lib/task/uploadVideoTask.class.php" />
+        <option value="$PROJECT_DIR$/lib/task/createScrinshotTask.class.php" />
+        <option value="$PROJECT_DIR$/lib/task/convertVideoTask.class.php" />
       </list>
     </option>
   </component>
@@ -165,7 +213,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,13 +397,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/databases.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/INSTALL">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="35" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
@@ -316,6 +421,48 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/sfDatabaseConfigHandler.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="57" selection-start="2148" selection-end="2200" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/databases.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/database/sfDatabaseManager.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="29" selection-start="850" selection-end="850" vertical-scroll-proportion="-3.3333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/task/uploadVideoTask.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="111" selection-start="292" selection-end="397" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/task/createScrinshotTask.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="117" selection-start="431" selection-end="431" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/task/convertVideoTask.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="6" selection-start="293" selection-end="293" vertical-scroll-proportion="0.3529412">
           <folding />
         </state>
       </provider>
