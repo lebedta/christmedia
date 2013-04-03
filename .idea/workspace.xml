@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d98b6da-e5f8-4846-9cf3-a48647dec11a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/filter/doctrine/ArticleCategoryFormFilter.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/filter/doctrine/ArticleFormFilter.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/form/doctrine/ArticleCategoryForm.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/form/doctrine/ArticleForm.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/model/doctrine/Article.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/model/doctrine/ArticleCategory.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/model/doctrine/ArticleCategoryTable.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/model/doctrine/ArticleTable.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/model/doctrine/VideoCategory.class.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/model/doctrine/VideoCategoryTable.class.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/config/sfApplicationConfiguration.class.php" afterPath="$PROJECT_DIR$/lib/config/sfApplicationConfiguration.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="christmedia.iws" />
@@ -20,6 +12,7 @@
     <file path="/database.yml" changelist="0d98b6da-e5f8-4846-9cf3-a48647dec11a" time="1365011278693" ignored="false" />
     <file path="/INSTALL" changelist="0d98b6da-e5f8-4846-9cf3-a48647dec11a" time="1365011842501" ignored="false" />
     <file path="/a.dummy" changelist="0d98b6da-e5f8-4846-9cf3-a48647dec11a" time="1365012863864" ignored="false" />
+    <file path="/sfApplicationConfiguration.class.php" changelist="0d98b6da-e5f8-4846-9cf3-a48647dec11a" time="1365014993378" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -57,10 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="schema.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/doctrine/schema.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.08498584">
+            <state line="45" column="31" selection-start="2099" selection-end="2099" vertical-scroll-proportion="-15.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sfApplicationConfiguration.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/config/sfApplicationConfiguration.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="153" column="5" selection-start="4128" selection-end="4128" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
@@ -93,11 +95,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/doctrine/database.yml" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/INSTALL" />
         <option value="$PROJECT_DIR$/lib/model/doctrine/ArticleCategory.class.php" />
+        <option value="$PROJECT_DIR$/lib/config/sfApplicationConfiguration.class.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -162,47 +165,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doctrine" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -240,14 +203,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="25" width="1370" height="745" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6710963" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6710963" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -329,13 +292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/INSTALL">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="35" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
@@ -345,7 +301,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/doctrine/schema.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.08498584">
+        <state line="45" column="31" selection-start="2099" selection-end="2099" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/config/sfApplicationConfiguration.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="5" selection-start="4128" selection-end="4128" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
