@@ -26,6 +26,8 @@ class video_listActions extends sfActions
         $this->videos->setQuery($videos);
         $this->videos->setPage($request->getParameter('page_idea', 1));
         $this->videos->init();
+
+        $this->categories = CategoryTable::getTreeCategories();
     }
 
     public function executeViewVideo(sfWebRequest $request)
