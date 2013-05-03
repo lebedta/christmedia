@@ -23,4 +23,14 @@ class CategoryTable extends Doctrine_Table
             ->select('*')
             ->from('Category');
     }
+
+    public static function getTreeCategories()
+    {
+        return Doctrine_Query::create()
+        ->select('c1.*, c2.*')
+        ->from('Category c1')
+        ->addFrom('Category c2')
+        ->where('c1.id=c2.parent_id')
+        ->execute(array() , Doctrine_Core::HYDRATE_SCALAR);
+    }
 }
