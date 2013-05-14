@@ -1,0 +1,200 @@
+Scrinshot:
+  Scrinshot_1:
+    file: d5f7d2d7288223d0c9116fd70ee75b11322fad671.png
+    Video: Video_1
+    created_at: '2013-05-05 12:04:36'
+    updated_at: '2013-05-05 12:04:36'
+  Scrinshot_2:
+    file: bcda07f7c4261d86cfe044c36938f988308aaf282.png
+    Video: Video_1
+    created_at: '2013-05-05 12:04:37'
+    updated_at: '2013-05-05 12:04:37'
+  Scrinshot_3:
+    file: 75b6a68c096e6f011c51cdf75006ff05db1b40c93.png
+    Video: Video_1
+    created_at: '2013-05-05 12:04:39'
+    updated_at: '2013-05-05 12:04:39'
+  Scrinshot_4:
+    file: bcdd9e54d213ae93985f961219c063b566acac314.png
+    Video: Video_1
+    created_at: '2013-05-05 12:04:41'
+    updated_at: '2013-05-05 12:04:41'
+  Scrinshot_5:
+    file: 8f04890cad25ccd76e8a061a44f4ec86f2f4f13b5.png
+    Video: Video_1
+    created_at: '2013-05-05 12:04:44'
+    updated_at: '2013-05-05 12:04:44'
+  Scrinshot_6:
+    file: 3dca77dbfeb7966ceb9993f55cb010a3b78d79391.png
+    Video: Video_2
+    created_at: '2013-05-05 12:04:45'
+    updated_at: '2013-05-05 12:04:45'
+  Scrinshot_7:
+    file: 539265f43359451518e1161e1ac2714cc663f78a2.png
+    Video: Video_2
+    created_at: '2013-05-05 12:04:46'
+    updated_at: '2013-05-05 12:04:46'
+  Scrinshot_8:
+    file: f449e7ce87b1c40a657a6c9cbb2f1601dec3acc83.png
+    Video: Video_2
+    created_at: '2013-05-05 12:04:47'
+    updated_at: '2013-05-05 12:04:47'
+  Scrinshot_9:
+    file: 5dfbc30520e160f7c81e80879cde7e935d88f8b34.png
+    Video: Video_2
+    created_at: '2013-05-05 12:04:49'
+    updated_at: '2013-05-05 12:04:49'
+  Scrinshot_10:
+    file: b8a11b40a97d598cad60249c1b63f130c52f78f95.png
+    Video: Video_2
+    created_at: '2013-05-05 12:04:52'
+    updated_at: '2013-05-05 12:04:52'
+sfGuardUser:
+  sfGuardUser_1:
+    first_name: null
+    last_name: null
+    email_address: admin@email.com
+    username: admin
+    algorithm: sha1
+    salt: d5b000310376ed1aef77e609286272df
+    password: 4eaeeba3e84d393f120e81a89f6f5853cae61a66
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    reg_tmp: null
+    removed: false
+    out_of_office: false
+    created_at: '2011-09-20 15:40:16'
+    updated_at: '2011-09-20 15:40:44'
+Video:
+  Video_1:
+    title: vcbcv
+    description: adsfsdf
+    file: f97678e9511189b65f54735400cdfb2b28eceba0.flv
+    date_upload: '2013-05-04 00:05:03'
+    duration: '50'
+    desc_file: null
+    is_active: true
+    is_converted: false
+    is_edit: false
+    status: complete
+    is_scrinshot: true
+    Category: Category_1
+    filming_date: '0000-00-00 00:00:00'
+    filming_place: ''
+    created_at: '2013-05-04 00:49:02'
+    updated_at: '2013-05-05 12:04:44'
+  Video_2:
+    title: zxcvzxc
+    description: zxc
+    file: 8ac6741320911e76cebac961ff7e37ec21623aa8.flv
+    date_upload: '2013-05-05 12:05:30'
+    duration: '50'
+    desc_file: null
+    is_active: true
+    is_converted: false
+    is_edit: false
+    status: complete
+    is_scrinshot: true
+    Category: Category_1
+    filming_date: '0000-00-00 00:00:00'
+    filming_place: ''
+    created_at: '2013-05-05 12:03:28'
+    updated_at: '2013-05-05 12:04:52'
+  Video_3:
+    title: sadfasdf
+    description: sdf
+    file: 8792860c6008b66ca6e0d3b004dd73502540ade3.flv
+    date_upload: '2013-05-05 12:05:29'
+    duration: '105'
+    desc_file: null
+    is_active: true
+    is_converted: false
+    is_edit: false
+    status: complete
+    is_scrinshot: false
+    Category: Category_1
+    filming_date: '0000-00-00 00:00:00'
+    filming_place: ''
+    created_at: '2013-05-05 12:06:29'
+    updated_at: '2013-05-05 12:06:29'
+VideoWatching:
+  VideoWatching_1:
+    Video: Video_2
+    user_cookie_id: 5186226bde09c
+    created_at: '2013-05-05 12:12:11'
+    updated_at: '2013-05-05 12:12:11'
+  VideoWatching_2:
+    Video: Video_1
+    user_cookie_id: 5186226bde09c
+    created_at: '2013-05-05 12:12:33'
+    updated_at: '2013-05-05 12:12:33'
+Category:
+  Category_1:
+    title: home
+    description: ''
+    parent_id: null
+    created_at: '2011-11-16 11:21:13'
+    updated_at: '2011-11-16 11:21:13'
+  Category_2:
+    title: test
+    description: ''
+    parent_id: '1'
+    created_at: '0000-00-00 00:00:00'
+    updated_at: '0000-00-00 00:00:00'
+  Category_3:
+    title: nan
+    description: ''
+    parent_id: '2'
+    created_at: '0000-00-00 00:00:00'
+    updated_at: '0000-00-00 00:00:00'
+  Category_4:
+    title: tdt
+    description: ''
+    parent_id: '1'
+    created_at: '0000-00-00 00:00:00'
+    updated_at: '0000-00-00 00:00:00'
+  Category_5:
+    title: fgf
+    description: ''
+    parent_id: '1'
+    created_at: '0000-00-00 00:00:00'
+    updated_at: '0000-00-00 00:00:00'
+  Category_6:
+    title: rtert
+    description: ''
+    parent_id: '2'
+    created_at: '0000-00-00 00:00:00'
+    updated_at: '0000-00-00 00:00:00'
+  Category_7:
+    title: sdfsdf
+    description: ''
+    parent_id: null
+    created_at: '0000-00-00 00:00:00'
+    updated_at: '0000-00-00 00:00:00'
+  Category_8:
+    title: 'sd cxv'
+    description: ''
+    parent_id: '6'
+    created_at: '0000-00-00 00:00:00'
+    updated_at: '0000-00-00 00:00:00'
+VideoRating:
+  VideoRating_1:
+    Video: Video_1
+    rating: '5'
+    user_cookie_id: 5186226bde09c
+    created_at: '2013-05-05 12:12:42'
+    updated_at: '2013-05-05 12:12:42'
+  VideoRating_2:
+    Video: Video_2
+    rating: '3'
+    user_cookie_id: 5186226bde09c
+    created_at: '2013-05-05 12:12:59'
+    updated_at: '2013-05-05 12:12:59'
+Language:
+  Language_1:
+    name: en
+    is_active: true
+  Language_2:
+    name: ru
+    is_active: true

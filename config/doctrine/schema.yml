@@ -74,7 +74,9 @@ Category:
   columns:
     title:              { type: string(255), notnull: true }
     description:        { type: text, notnull: true }
-    parent_id:          { type: integer, default: 0, notnull: true }
+    parent_id:          { type: integer }
+  relations:
+    Category:           { local: parent_id, foreign: id }
   actAs:
     Timestampable: ~
 

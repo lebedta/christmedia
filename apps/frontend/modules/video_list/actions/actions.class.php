@@ -19,7 +19,9 @@ class video_listActions extends sfActions
     public function executeIndex(sfWebRequest $request)
     {
         $this->order = $request->getUrlParameter('order');
-        $videos = VideoTable::getVideos($this->order);
+        $this->category = $request->getUrlParameter('category', null);
+
+        $videos = VideoTable::getVideos($this->order, $this->category);
         $items_display = 6;
 
         $this->videos = new sfDoctrinePager('Video', $items_display);
@@ -27,7 +29,7 @@ class video_listActions extends sfActions
         $this->videos->setPage($request->getParameter('page_idea', 1));
         $this->videos->init();
 
-        $this->categories = CategoryTable::getTreeCategories();
+        //$this->categories = CategoryTable::getParentCategories();
     }
 
     public function executeViewVideo(sfWebRequest $request)

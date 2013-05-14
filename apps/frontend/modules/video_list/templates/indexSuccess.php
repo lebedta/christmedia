@@ -15,11 +15,9 @@
     </ul>
 </div>
 <div>
-    <ul id="navigation">
-        <?php foreach($categories as $category): ?>
 
-        <?php endforeach; ?>
-    </ul>
+    <?php include_partial("video_list/menuTree"); ?>
+
     <ul>
         <?php foreach($videos->getResults() as $video): ?>
         <li style="width: 110px; float: left; padding-top: 10px; margin-left: 30px;" class="mouse_move">

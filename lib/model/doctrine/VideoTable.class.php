@@ -17,7 +17,7 @@ class VideoTable extends Doctrine_Table
         return Doctrine_Core::getTable('Video');
     }
 
-    public static function getVideos($order)
+    public static function getVideos($order, $cat_title)
     {
         $query = Doctrine_Query::create()
             ->select('*')
@@ -25,6 +25,20 @@ class VideoTable extends Doctrine_Table
             ->where("is_converted = ?", false)
             ->addWhere("is_active = ?", true)
             ->addWhere('is_scrinshot = ?', true);
+
+        if($cat_title != null)
+        {
+
+
+            $category = Doctrine::getTable('Category')->findOneBy('title', array($cat_title));
+
+
+            $category_id = $category->getId().', '.CategoryTable::getChildrenCategory($category->getId());
+
+            $query->leftJoin('v.Category c')
+                ->addWhere("c.id in(".trim($category_id,', ').")");
+            }
+
         switch($order)
         {
             case 'd': $query->orderBy('v.created_at desc');
