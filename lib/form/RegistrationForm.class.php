@@ -37,5 +37,15 @@ class RegistrationForm extends BasesfGuardUserAdminForm
         $activation_code->setUserId($this->getObject()->getId());
         $activation_code->setCode(md5((string) time()));
         $activation_code->save();
+
+        //user profile
+        $profile = $this->getObject()->getProfile();
+        $profile->setTitle('user');
+        $profile->setUserCookieId($_COOKIE['myCookie']);
+        $profile->save();
+
+        $this->getObject()->setProfileId($profile->getId());
+        $this->getObject()->save();
+
     }
 }

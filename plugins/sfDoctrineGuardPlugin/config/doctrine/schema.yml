@@ -51,7 +51,7 @@ sfGuardGroupPermission:
       onDelete: CASCADE
 
 sfGuardUser:
-  actAs: [Timestampable, sfLuceneDoctrineTemplate]
+  actAs: [Timestampable]
   columns:
     profile_id:
       type: integer

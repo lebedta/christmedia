@@ -38,6 +38,7 @@ class video_listActions extends sfActions
         $this->video = Doctrine_Core::getTable('Video')->find($video_id);
         $this->forward404Unless($this->video, "Video not exist");
 
+
         if(isset($_COOKIE['myCookie']))
         {
             if(!VideoWatchingTable::isWatching($this->video, $_COOKIE['myCookie']))
