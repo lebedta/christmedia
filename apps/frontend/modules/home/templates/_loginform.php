@@ -17,6 +17,7 @@
                 <!--<a href="--><?php //echo url_for('@profile') ?><!--">profile</a>-->
                 <!--<a href="--><?php //echo url_for('@user_info?domain_name='.sfContext::getInstance()->getUser()->getProfile()->getCompany()->getSubDomain().'&id='.sfContext::getInstance()->getUser()->getGuardUser()->getId()); ?><!--">profile</a>-->
                 <a href="<?php echo url_for('@sf_guard_signout') ?>">logout</a>
+                <a href="<?php echo url_for('@profile') ?>">profile</a>
             </div>
         <?php endif;?>
     </div>

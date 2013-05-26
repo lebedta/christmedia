@@ -1,7 +1,7 @@
 <?php if ($sf_user->isAuthenticated()): ?>
 
-    Logged In as <a href="<?php echo url_for('@profile') ?>"><?php echo $sf_user->getGuardUser()->getUserName(); ?></a>
-    <a href="<?php echo url_for('@sf_guard_signout') ?>">Log Out ›</a>
+<!--    Logged In as <a href="--><?php //echo url_for('@profile') ?><!--">--><?php //echo $sf_user->getGuardUser()->getUserName(); ?><!--</a>-->
+<!--    <a href="--><?php //echo url_for('@sf_guard_signout') ?><!--">Log Out ›</a>-->
 
     <div> <?php echo $sf_user->getFlash('notice') ?> </div>
 

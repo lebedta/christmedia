@@ -7,10 +7,6 @@
       <link rel="shortcut icon" href="/favicon.ico" />
       <?php include_stylesheets() ?>
       <?php include_javascripts() ?>
-<!--      <script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>-->
-<!--      <script type="text/javascript" src="/js/jquery.em.js"></script>-->
-<!--      <script type="text/javascript" src="/js/jquery.jScrollPane.js"></script>-->
-
   </head>
   <body>
       <div class="global-wrapper">
