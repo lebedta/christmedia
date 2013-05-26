@@ -1,4 +1,4 @@
-.idea
+.idea/*
 cache/*
 log/*
 config/databases.yml
@@ -13,3 +13,5 @@ lib/filter/doctrine/*/base/*
 data/sql/schema.sql
 
 web/uploads/*
+
+dara/index/*
