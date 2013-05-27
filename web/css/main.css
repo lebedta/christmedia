@@ -1,14 +1,10 @@
-html,body {
-    width:100%;
-    height:100%;
-}
-body {
-    padding:0px;
-    margin:0px;
-    background: none;
-    font-family: Arial;
-    font-size: 12px;
-}
+/*===========================================main reset================================================
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,
+dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,
+img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,
+strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp {
+    margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;
+}*/
 div, p, form, fieldset, label, img, h1, h2, h3, h4, h5, p, ul, li, dl, dt, dd, table, td, tr {
     padding:0px;
     margin:0px;
@@ -18,6 +14,35 @@ div, p, form, fieldset, label, img, h1, h2, h3, h4, h5, p, ul, li, dl, dt, dd, t
     outline:none;
     list-style:none;
 }
+
+html {
+    width:100%;
+    height:100%;
+}
+
+body
+{background-color: #fff;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    color:#333;
+    width:1400px;
+    padding:0;
+    margin:auto;
+}
+.clear {clear:both;}
+
+.global-wrapper
+{}
+/*.global-wrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 94px;
+    position: relative;
+}*/
+
 button, a, input[type='submit'], input[type='button'], input[type="file"] {
     cursor: pointer;
 }
@@ -84,18 +109,11 @@ ul.path li h2 {
     text-transform: capitalize;
 }
 
-.global-wrapper {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    min-height: 100%;
-    padding: 0 0 94px;
-    position: relative;
-}
 
-.content {
-    overflow: hidden;
-    padding: 0 0 20px;
+
+.center-background {
+    background: url("../images/background.jpg") 0 0 no-repeat;
+    min-height:635px;
 }
 /*------------------------------------------------------------------------*/
 /*---------------------------------DEFAULT CLASSES------------------------*/
@@ -109,28 +127,39 @@ ul.path li h2 {
 /*---------------------------------HEADER---------------------------------*/
 /*------------------------------------------------------------------------*/
 .header {
-    background: #FFFFFF;
-    width: 100%;
-    height: 70px;
-    position: relative;
-    z-index: 100;
+    background: url("../images/background-header.jpg") 0 0 no-repeat;
+    height:170px;
 }
 
-.header h1 {
-    text-indent: -1000000px;
-    background: url("../images/logo.png") no-repeat left top;
-    width: 237px;
-    height: 51px;
-    float: left;
-    margin-top: 9px;
+.logo {
+    background: url("../images/logo.png") no-repeat;
+    width:215px;
+    height:138px;
+    float:left;
+    margin-left: 40px;
 }
 
-.header h1 a {
+.registration
+{float:right;
+ width:239px;
+ margin-top: 105px;
+ }
+
+.registration a.login-button{
+    background: url("../images/login.png");
+    width: 105px;
+    height: 32px;
     display: block;
-    width: 100%;
-    height: 100%;
+    float:left;
 }
 
+.registration a.registration-button{
+    background: url("../images/registration.png");
+    width: 134px;
+    height: 32px;
+    display: block;
+    float: right;
+}
 .login-form {
     background: rgba(255, 255, 255, 0.8);
     height: 46px;
@@ -187,76 +216,69 @@ ul.path li h2 {
 /*------------------------------------------------------------------------*/
 /*---------------------------------Menu----------------------------------*/
 /*------------------------------------------------------------------------*/
-
 .menu {
-    width: 100%;
-    clear: both;
-    background: #80A2BE;
-    padding: 9px 0;
-    height: 22px;
-    outline: 5px solid rgba(0, 0, 0, 0.2);
+    background: url("../images/background_main_menu.jpg") no-repeat;
+    height:71px;
 }
 
-.menu-list {
-    list-style: none;
+.menu ul {
+    list-style-type:none;
+    margin-left: 32px;
 }
-.menu-list li {
-    float: left;
-    padding: 0 15px;
-    border-left: 1px solid rgba(225, 225, 255, 0.3);
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    line-height: 21px;
-    position: relative;
+.menu ul li {
+    float:left;
+    padding: 0px 8px 8px;
 }
-.menu-list li a {
-    color: #000000;
+
+.menu ul li a {
+    color: #333333;
+    display: block;
+    font-size: 20px;
+    padding-top: 23px;
     text-decoration: none;
-    font-size: 14px;
-    font-family: Helvetica;
 }
 
-.menu-list li a:hover {
-    text-decoration: underline;
+.menu ul li a:hover, .menu ul li a:active {
+    background: url("../images/path.png") center top no-repeat;
 }
 
-.menu-list li.no-left-border {
-    border-left: none;
+.sub_menu
+{  height:50px;
+    background: url("../images/sub-menu-border-bottom.jpg") 0 bottom no-repeat;
+    -moz-box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6); /* Для Firefox */
+    -webkit-box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6); /* Для Safari и Chrome */
+    box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6);	/* Параметры тени */
+}
+.sub_menu ul {
+    list-style-type:none;
+    margin-left: 32px;
 }
 
-.menu-list li.no-right-border {
-    border-right: none;
+.sub_menu ul li {
+    float:left;
+    padding: 17px 8px 16px;
 }
+.sub_menu ul li a {
+    color: #333333;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+}
+.sub_menu ul li a:active
+{background: url("../images/path1.png") center bottom no-repeat;}
 
-.menu-list li span {
-    position: absolute;
-    right: -5px;
-    top: -5px;
-    background: #CC0000;
-    padding: 1px 4px 1px 3px;
-    border-radius: 5px;
-    font: bold 10px/10px Arial;
-    color: #FFF;
-    letter-spacing: -1px;
-}
 
 /*------------------------------------------------------------------------*/
 /*----------------------------------FOOTER--------------------------------*/
 /*------------------------------------------------------------------------*/
 .footer {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 15px 0;
-    border-top: 5px solid rgba(0, 0, 0, 0.15);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background: url(../images/sub-menu-border-bottom.jpg) 0 top no-repeat;
+    padding: 40px 0;
+    text-align: center;
+    clear:both;
 }
 
 .footer p {
-    font-family: Tahoma;
-    font-size: 11px;
-    color: #000000;
-    text-shadow: #FFFFFF -1px -1px 1px;
     margin-left: 65px;
 }
 
@@ -264,20 +286,21 @@ ul.path li h2 {
     font-size: 13px;
     color: #000000;
     text-shadow: #FFFFFF -1px -1px 1px;
-    font-family: Helvetica, Arial;
+    font-family: Arial;
 }
 
 /*------------------------------------------------------------------------*/
 /*---------------------------------TOP SEARCH-----------------------------*/
 /*------------------------------------------------------------------------*/
-
-form.search-controls {
+.search-form{
     float: right;
+    margin-top: 22px;
+}
+form.search-controls {
     border: 1px solid #5A7286;
     border-radius: 5px;
     background: #FFFFFF;
     padding: 3px 5px 3px 15px;
-    margin-top: -2px;
     height: 19px;
 }
 form.search-controls input{
@@ -348,4 +371,58 @@ form.search-controls .fake-select {
     color: #666;
     overflow: hidden;
     padding: 0 20px 0 5px;
+}
+/*==============================================================================
+.slidesjs-container, .slidesjs-control, .slider_JS {
+    width:200px !important;
+    height: 117px !important;
+}*/
+.content {
+    width:725px;
+    float:left;
+}
+
+.sidebar {
+    width:205px;
+    height:640px;
+    background-color:#3399cc;
+    color:#fff;
+    float:right;
+    text-align:left;
+    padding: 20px 10px 20px 20px;
+    font-size:1em;
+    font-weight:bold;
+}
+
+.slider_JS {
+    width: 200px;
+    height: 117px;
+    display: block;
+    padding:9px;
+    margin:10px;
+    border:1px solid #ccc;
+    background-color:#fff;
+    -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); /* Для Firefox */
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); /* Для Safari и Chrome */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);	/* Параметры тени */
+}
+
+.star {
+    margin-left: 10px;
+    float:left;
+}
+.video-prewiev a {
+    text-decoration:none;
+    color: #333;
+    display: block;
+    clear:both;
+    padding-bottom: 5px;
+}
+.treeview ul{
+    background-color: #3399cc !important;
+}
+.treeview ul li a{
+    color:#fff;
+    font-size:14px;
+    text-decoration: none;
 }

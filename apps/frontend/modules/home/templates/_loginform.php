@@ -2,10 +2,13 @@
 
 <div class="header">
     <div class="wrapper">
+        <div class="logo">
+        </div>
+        <div class="registration">
         <?php if(!$user->isAuthenticated()): ?>
 
-                <a href="<?php echo url_for('@sf_guard_signin') ?>">Логин</a>
-                <a href="<?php echo url_for("@registration") ?>">Регистрация</a>
+                <a href="<?php echo url_for('@sf_guard_signin') ?>" class="login-button"></a>
+                <a href="<?php echo url_for("@registration") ?>" class="registration-button"></a>
 
         <?php else: ?>
 <!--            <h1 class="logo"><a href="--><?php //echo url_for('@dashboard?domain_name='.sfContext::getInstance()->getUser()->getProfile()->getCompany()->getSubDomain()) ?><!--">--><?php //echo sfContext::getInstance()->getUser()->getProfile()->getCompany()->getName(); ?><!--</a></h1>-->
@@ -20,5 +23,6 @@
                 <a href="<?php echo url_for('@profile') ?>">profile</a>
             </div>
         <?php endif;?>
+        </div>
     </div>
 </div>

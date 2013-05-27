@@ -1,37 +1,20 @@
-<div class="menu">
-    <ul class="menu-list">
-        <li class="no-left-border">
-            <a href="<?php echo url_for('@videos?order=d'); ?>">Добавленые</a>
-        </li>
-        <li>
-            <a href="<?php echo url_for('@videos?order=v'); ?>">Просмотренные</a>
-        </li>
-        <li>
-            <a href="<?php echo url_for('@videos?order=c'); ?>">Обсуждаемые</a>
-        </li>
-        <li  class="no-right-border">
-            <a href="<?php echo url_for('@videos?order=r'); ?>">Лучшие</a>
-        </li>
-    </ul>
-</div>
+
 <div>
-
-    <?php include_partial("video_list/menuTree"); ?>
-
-    <ul>
+    <ul class="video-prewiev">
         <?php foreach($videos->getResults() as $video): ?>
-        <li style="width: 110px; float: left; padding-top: 10px; margin-left: 30px;" class="mouse_move">
+        <li style="float: left; " class="mouse_move">
             <span>
                 <a href="<?php echo url_for('@view_video?video_id='.$video->getId()); ?>">
-                    <div id="sl_<?php echo $video->getId(); ?>" style="width: 120px; height: 90px; display: block;" class="slider_JS">
+                    <div id="sl_<?php echo $video->getId(); ?>" style="" class="slider_JS">
 
                         <?php foreach($video->getScrinshots() as $scrinshot): ?>
-                        <?php echo image_tag('/uploads/scrinshot/'.$scrinshot->getFile(), array('width'=>'120', 'height'=>'90')); ?>
+                        <?php echo image_tag('/uploads/scrinshot/'.$scrinshot->getFile(), array('width'=>'200', 'height'=>'117')); ?>
                         <?php endforeach; ?>
 
                     </div>
+                    <?php echo $video->getTitle(); ?>
                 </a>
-                <?php echo $video->getTitle(); ?>
+
             </span>
             <div id="star_<?php echo $video->getId(); ?>" class="star"></div>
             <span>
@@ -49,7 +32,7 @@
     </ul>
 </div>
 
-<div class="pager" style="clear: both; padding-top: 55px;">
+<div class="pager" style="...">
     <?php include_partial('video_list/paginator', array('params' => array('type' => '', 'name' => 'page_idea') ,'pager' => $videos, 'action_link' => urlencode('@videos?order='.$order))); ?>
 </div>
 

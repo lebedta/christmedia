@@ -21,11 +21,10 @@
               });
         </script>
 
-          <div class="content">
-                  <div class="menu">
+                <div class="menu">
                       <div class="wrapper">
-                          <ul class="menu-list">
-                              <li class="no-left-border">
+                          <ul>
+                              <li>
                                   <a href="<?php echo url_for('@videos'); ?>">Видео</a>
                               </li>
                               <li>
@@ -40,28 +39,51 @@
                               <li>
                                   <a href="<?php echo url_for('@videos'); ?>">Блог</a>
                               </li>
-                              <li class="no-right-border">
-                                  <form id="search" action="<?php echo url_for('@search') ?>" method="get" class="search-controls">
-                                      <?php
-                                      $form = new sfLuceneSimpleForm();
-                                      echo $form['query']; ?>
-
-                                      <div class="fake-select" id="top-search">
-                                          <?php echo $form['entity']; ?>
-                                          <div class="textfield"></div>
-                                      </div>
-
-
-
-                                      <input type="submit" name="commit" accesskey="s" value="<?php echo __('Go') ?>" />
-                                  </form>
-                              </li>
                       </ul>
+                      <div class="search-form">
+                          <form id="search" action="<?php echo url_for('@search') ?>" method="get" class="search-controls">
+                              <?php
+                              $form = new sfLuceneSimpleForm();
+                              echo $form['query']; ?>
+
+                              <div class="fake-select" id="top-search">
+                                  <?php echo $form['entity']; ?>
+                                  <div class="textfield"></div>
+                              </div>
+
+                              <input type="submit" name="commit" accesskey="s" value="<?php echo __('Go') ?>" />
+                          </form>
+                      </div>
                   </div>
               </div>
+          <div class="center-background">
+              <div class="sub_menu">
                   <div class="wrapper">
-                      <?php echo $sf_content ?>
+                  <ul>
+                     <li>
+                       <a href="<?php echo url_for('@videos?order=d'); ?>">Добавленые</a>
+                     </li>
+                     <li>
+                       <a href="<?php echo url_for('@videos?order=v'); ?>">Просмотренные</a>
+                     </li>
+                     <li>
+                       <a href="<?php echo url_for('@videos?order=c'); ?>">Обсуждаемые</a>
+                     </li>
+                     <li>
+                       <a href="<?php echo url_for('@videos?order=r'); ?>">Лучшие</a>
+                     </li>
+                  </ul>
                   </div>
+              </div>
+
+              <div class="wrapper">
+                  <div class="sidebar">
+                      <?php include_partial("video_list/menuTree"); ?>
+                  </div>
+                  <div class="content">
+                    <?php echo $sf_content ?>
+                  </div>
+              </div>
           </div>
           <div class="footer">
               <div class="wrapper">

@@ -2,23 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446ced58-7226-49b6-8d41-c891a6b06059" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/_d.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/_d.sti" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/_e.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments_q" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments_s" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments.gen" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/background-header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/background_main_menu.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/background_sub_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/background_sub_menu1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/bottom_video.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/flower.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/foto-login.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/path.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/path1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/registration.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/sub-menu-border-bottom.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/logo.png" afterPath="$PROJECT_DIR$/web/images/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/templates/layout.php" afterPath="$PROJECT_DIR$/apps/frontend/templates/layout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Blueprint.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369595616069" ignored="false" />
+    <file path="/Dummy.txt" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369637321627" ignored="false" />
     <file path="/actions.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369338382892" ignored="false" />
     <file path="/CategoryTable.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1368533981497" ignored="false" />
-    <file path="/indexSuccess.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1367833434988" ignored="false" />
+    <file path="/indexSuccess.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369633165528" ignored="false" />
     <file path="/schema.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1367758976973" ignored="false" />
     <file path="/dump_05_05_2013.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1367759225391" ignored="false" />
     <file path="/view.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1367764187592" ignored="false" />
@@ -32,7 +41,9 @@
     <file path="/RegistrationForm.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369331674315" ignored="false" />
     <file path="/a.dummy" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369331961986" ignored="false" />
     <file path="$PROJECT_DIR$/../localhost-foundershub/apps/frontend/config/search.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369337671926" ignored="false" />
-    <file path="/_loginform.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369596093186" ignored="false" />
+    <file path="/_loginform.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369635037619" ignored="false" />
+    <file path="/main.css" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369635517394" ignored="false" />
+    <file path="/layout.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369633505458" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,37 +63,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="actions.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="9" selection-start="1705" selection-end="1705" vertical-scroll-proportion="-9.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actions.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/actions/actions.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2473" selection-end="2473" vertical-scroll-proportion="-21.416666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/frontend/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="7" selection-start="654" selection-end="661" vertical-scroll-proportion="-5.75">
+            <state line="5" column="33" selection-start="168" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="indexSuccess.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="193" selection-end="272" vertical-scroll-proportion="-1.875">
+            <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,34 +84,25 @@
       <file leaf-file-name="layout.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="51" selection-start="532" selection-end="532" vertical-scroll-proportion="-2.2307692">
+            <state line="81" column="23" selection-start="3542" selection-end="3542" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_loginform.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_loginform.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="67" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.60126585">
+            <state line="10" column="84" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/config/search.yml">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schema.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/sfDoctrineGuardPlugin/config/doctrine/schema.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="27" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
+            <state line="166" column="23" selection-start="4353" selection-end="4353" vertical-scroll-proportion="0.625">
               <folding />
             </state>
           </provider>
@@ -142,12 +126,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/apps/frontend/modules/registration/actions/actions.class.php" />
         <option value="$PROJECT_DIR$/lib/model/doctrine/sfGuardUserProfileTable.class.php" />
         <option value="$PROJECT_DIR$/data/fixtures/dump_05_05_2013.yml" />
         <option value="$PROJECT_DIR$/config/doctrine/schema.yml" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/config/view.yml" />
-        <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_menuTree.php" />
         <option value="$PROJECT_DIR$/lib/model/doctrine/CategoryTable.class.php" />
         <option value="$PROJECT_DIR$/lib/model/doctrine/VideoTable.class.php" />
@@ -156,17 +138,19 @@
         <option value="$PROJECT_DIR$/plugins/sfDoctrineGuardPlugin/config/doctrine/schema.yml" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" />
+        <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php" />
         <option value="$PROJECT_DIR$/apps/frontend/templates/layout.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" />
+        <option value="$PROJECT_DIR$/web/css/main.css" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="24" />
-    <option name="width" value="1382" />
-    <option name="height" value="728" />
+    <option name="x" value="-2" />
+    <option name="y" value="25" />
+    <option name="width" value="1370" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -209,7 +193,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
+              <option name="myItemId" value="christmedia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,7 +203,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -241,7 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
+              <option name="myItemId" value="christmedia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -263,67 +297,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profiler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profiler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -353,7 +327,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
+              <option name="myItemId" value="christmedia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -379,67 +353,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="article" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="article" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -457,29 +371,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="christmedia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Video" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -501,9 +393,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/images" />
       <recent name="$PROJECT_DIR$/web/buildtree/css/images" />
       <recent name="$PROJECT_DIR$/web/buildtree/images" />
-      <recent name="$PROJECT_DIR$/web/images" />
       <recent name="$PROJECT_DIR$/web/js/tree" />
       <recent name="$PROJECT_DIR$/web/css" />
     </key>
@@ -556,14 +448,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="24" width="1382" height="728" extended-state="6" />
+    <frame x="-2" y="25" width="1370" height="745" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2006079" sideWeight="0.6466431" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2560606" sideWeight="0.6466431" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -642,98 +534,92 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugins/sfLucenePlugin/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/actions/actions.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="454" selection-end="454" vertical-scroll-proportion="-11.875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/form/RegistrationForm.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1171" selection-end="1171" vertical-scroll-proportion="-16.541666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/search.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/doctrine/schema.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="4" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/frontend/config/app.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/frontend/config/factories.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/frontend/config/filters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/config/search.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.08445946" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/sfDoctrineGuardPlugin/config/doctrine/schema.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="27" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="9" selection-start="1705" selection-end="1705" vertical-scroll-proportion="-9.375">
-          <folding />
-        </state>
+        <state line="57" column="27" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.016891891" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/actions/actions.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2473" selection-end="2473" vertical-scroll-proportion="-21.416666">
-          <folding />
-        </state>
+        <state line="77" column="0" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="193" selection-end="272" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="193" selection-end="272" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="51" selection-start="532" selection-end="532" vertical-scroll-proportion="-2.2307692">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/databases.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/images/background-header.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video/templates/uploadVideoSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/indexSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="20" selection-start="983" selection-end="990" vertical-scroll-proportion="0.5387524" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/config/view.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="44" selection-start="49" selection-end="49" vertical-scroll-proportion="0.027777778" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="7" selection-start="654" selection-end="661" vertical-scroll-proportion="-5.75">
+        <state line="5" column="33" selection-start="168" selection-end="183" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="23" selection-start="3542" selection-end="3542" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="67" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.60126585">
+        <state line="10" column="84" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="23" selection-start="4353" selection-end="4353" vertical-scroll-proportion="0.625">
           <folding />
         </state>
       </provider>
