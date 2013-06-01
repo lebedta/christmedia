@@ -13,7 +13,7 @@
         <?php else: ?>
 <!--            <h1 class="logo"><a href="--><?php //echo url_for('@dashboard?domain_name='.sfContext::getInstance()->getUser()->getProfile()->getCompany()->getSubDomain()) ?><!--">--><?php //echo sfContext::getInstance()->getUser()->getProfile()->getCompany()->getName(); ?><!--</a></h1>-->
             <div class="login-form">
-<!--                <img src="--><?php //echo $user->getGuardUser()->getProfile()->getUserAvatar(32) ?><!--" alt="--><?php //echo $user->getGuardUser()->getFullName(); ?><!--" />-->
+                <img src="<?php echo $user->getGuardUser()->getProfile()->getUserAvatar(32) ?>" alt="<?php echo $user->getGuardUser()->getFullName(); ?>" />
                 <span class="user-name">
                     <?php echo $user->getGuardUser()->getFullName(); ?>
                 </span>

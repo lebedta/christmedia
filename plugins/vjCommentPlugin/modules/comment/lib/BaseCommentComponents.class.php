@@ -35,8 +35,10 @@ class BaseCommentComponents extends sfComponents
           //adding user id
           $formValues = array_merge( $formValues, array('user_id' => $this->getUser()->getGuardUser()->getId())  );
         }
-        $formValues = array_merge($formValues, array('body'=> nl2br(htmlspecialchars($formValues['body']))));
-        $this->form->bind( $formValues );
+        $$formValues['body']= str_replace("<script", "<code", $formValues['body']);
+          $formValues['body']= str_replace("</script>", "</code>", $formValues['body']);
+          $formValues = array_merge($formValues, array('body'=> (urldecode($formValues['body']))));
+          $this->form->bind( $formValues );
         if ($this->form->isValid())
         {
           $this->form->save();

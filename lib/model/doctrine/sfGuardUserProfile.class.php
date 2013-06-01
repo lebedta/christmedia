@@ -12,4 +12,28 @@
  */
 class sfGuardUserProfile extends BasesfGuardUserProfile
 {
+    public function getUserAvatar($param = null)
+    {
+        if(is_null($this->getAvatar()) || ($this->getAvatar() == ""))
+        {
+            if(!is_null($param))
+            {
+                return "/images/avatar_default_".$param.".jpg";
+            }
+            else
+            {
+                return "/images/no_avatar.png";
+            }
+        }
+        elseif(!is_null($param))
+        {
+            $image_file_name = explode(".", $this->getAvatar());
+
+            return "/uploads/companies/company_".$this->getCompanyId().'/'.$image_file_name[0]."_".$param.".".$image_file_name[1];
+        }
+        else
+        {
+            return "/uploads/companies/company_".$this->getCompanyId().'/'.$this->getAvatar();
+        }
+    }
 }

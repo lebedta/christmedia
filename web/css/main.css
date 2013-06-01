@@ -426,3 +426,87 @@ form.search-controls .fake-select {
     font-size:14px;
     text-decoration: none;
 }
+
+/*Comment*/
+.form-comment form fieldset legend,
+.send-additional-message h1 {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: #333333;
+    display: block;
+    font: 24px/120% BradlyHandITC;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.form-comment form fieldset tr.tr_reply_author {
+    display: none !important;
+}
+
+.form-comment a.delete_reply {
+    display: none;
+}
+
+.form-comment form fieldset table {
+    margin: 10px 20px;
+    width: 560px;
+}
+
+.form-comment form fieldset table th {
+    width: 78px;
+}
+
+.form-comment form fieldset table td label {
+    font: 12px Helvetica;
+    color: #333;
+    margin: 20px 0 3px;
+    display: block;
+}
+
+.form-comment form fieldset table td textarea {
+    width: 530px;
+    font: 12px/150% Helvetica;
+    color: #333;
+    max-width: 530px;
+    max-height: 220px;
+    border: 1px solid #A2A2A2;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px;
+}
+
+.form-comment form fieldset table td input[type='text'] {
+    width: 540px;
+    font: 12px/17px Helvetica;
+    color: #333;
+    background-color: #FFF;
+    border: 1px solid #A2A2A2;
+    border-radius: 3px;
+    padding:  7px;
+    margin:0;
+}
+
+
+.form-comment form fieldset table td input[type='submit'] {
+    float: none;
+    margin: 20px auto;
+    width: 100px;
+}
+
+.comment ul table tbody tr td {
+    padding: 0 0 0 40px;
+    width: 100%;
+}
+
+.comment ul table tbody tr td:last-of-type {
+    /*padding:  0;*/
+}
+
+.comment table.list-comments tbody tr td {
+    border-bottom: 1px dotted #AFAFAF;
+}
+
+.comment tr td .cell-wrapper {
+    position: relative;
+    overflow: hidden;
+}

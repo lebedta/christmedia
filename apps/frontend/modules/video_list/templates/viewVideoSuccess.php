@@ -15,19 +15,27 @@
 <span>
     Просмотров: <?php echo $video->getVideoWatching()->count(); ?>
 </span>
-
-<?php include_component('comment', 'list', array('object' => $video, 'i' => 0)) ?>
-
-<a class="btn btn-light-grey pop-up_form new_comment_form" href="#comment_form">Новый комент</a>
-<div style="display: none;">
-    <div id="comment_form" >
-        <?php include_component('comment', 'formComment', array('object' => $video)) ?>
-    </div>
+<div class="comment">
+    <?php include_component('comment', 'list', array('object' => $video, 'i' => 0)) ?>
+    <?php if (sfContext::getInstance()->getUser()->isAuthenticated()): ?>
+        <a class="btn btn-light-grey pop-up_form new_comment_form" href="#comment_form">Новый комент</a>
+        <div style="display: none;">
+            <div id="comment_form" >
+                <?php include_component('comment', 'formComment', array('object' => $video)) ?>
+            </div>
+        </div>
+    <?php endif; ?>
 </div>
+<?php if (!sfContext::getInstance()->getUser()->isAuthenticated()): ?>
+    <script type="text/javascript">
+        jQuery(".reply-quote").hide();
+    </script>
+<?php endif; ?>
 
 <script type="text/javascript ">
     jQuery(".pop-up_form").fancybox();
     jQuery(".new_comment_form").click(function(){
+
         var form_name=jQuery(".form-comment").children("form").attr("name");
 
         jQuery('#title-pop-comment').html('Add new comment');
