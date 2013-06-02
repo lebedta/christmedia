@@ -1,6 +1,6 @@
 <?php use_helper('I18N') ?>
 
-<div class="header">
+<header>
     <div class="wrapper">
         <div class="logo">
         </div>
@@ -25,4 +25,4 @@
         <?php endif;?>
         </div>
     </div>
-</div>
+</header>

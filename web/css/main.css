@@ -74,6 +74,7 @@ a, a img {
     font-weight: normal;
     font-style: normal;
 }
+
 ul.path {
     margin: 15px 5px;
     overflow: hidden;
@@ -115,9 +116,7 @@ ul.path li h2 {
     background: url("../images/background.jpg") 0 0 no-repeat;
     min-height:635px;
 }
-/*------------------------------------------------------------------------*/
-/*---------------------------------DEFAULT CLASSES------------------------*/
-/*------------------------------------------------------------------------*/
+
 .wrapper {
     width: 960px;
     margin: 0 auto 0;
@@ -126,7 +125,7 @@ ul.path li h2 {
 /*------------------------------------------------------------------------*/
 /*---------------------------------HEADER---------------------------------*/
 /*------------------------------------------------------------------------*/
-.header {
+header {
     background: url("../images/background-header.jpg") 0 0 no-repeat;
     height:170px;
 }
@@ -216,21 +215,21 @@ ul.path li h2 {
 /*------------------------------------------------------------------------*/
 /*---------------------------------Menu----------------------------------*/
 /*------------------------------------------------------------------------*/
-.menu {
+nav {
     background: url("../images/background_main_menu.jpg") no-repeat;
     height:71px;
 }
 
-.menu ul {
+nav ul {
     list-style-type:none;
     margin-left: 32px;
 }
-.menu ul li {
+nav ul li {
     float:left;
     padding: 0px 8px 8px;
 }
 
-.menu ul li a {
+nav ul li a {
     color: #333333;
     display: block;
     font-size: 20px;
@@ -238,7 +237,7 @@ ul.path li h2 {
     text-decoration: none;
 }
 
-.menu ul li a:hover, .menu ul li a:active {
+nav ul li a:hover, nav ul li a:active {
     background: url("../images/path.png") center top no-repeat;
 }
 
@@ -271,18 +270,18 @@ ul.path li h2 {
 /*------------------------------------------------------------------------*/
 /*----------------------------------FOOTER--------------------------------*/
 /*------------------------------------------------------------------------*/
-.footer {
+footer {
     background: url(../images/sub-menu-border-bottom.jpg) 0 top no-repeat;
     padding: 40px 0;
     text-align: center;
     clear:both;
 }
 
-.footer p {
+footer p {
     margin-left: 65px;
 }
 
-.footer a {
+footer a {
     font-size: 13px;
     color: #000000;
     text-shadow: #FFFFFF -1px -1px 1px;
@@ -381,8 +380,7 @@ form.search-controls .fake-select {
     width:725px;
     float:left;
 }
-
-.sidebar {
+aside{
     width:205px;
     height:640px;
     background-color:#3399cc;
