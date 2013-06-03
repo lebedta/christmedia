@@ -92,6 +92,7 @@ h1, h2 {
     font-weight: normal;
     font-style: normal;
 }
+
 ul.path {
     margin: 15px 5px;
     overflow: hidden;
@@ -133,9 +134,7 @@ ul.path li h2 {
     background: url("../images/background.jpg") 0 0 no-repeat;
     min-height:635px;
 }
-/*------------------------------------------------------------------------*/
-/*---------------------------------DEFAULT CLASSES------------------------*/
-/*------------------------------------------------------------------------*/
+
 .wrapper {
     width: 960px;
     margin: 0 auto 0;
@@ -256,7 +255,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover, .menu ul li a:active {
+nav ul li a:hover, nav ul li a:active {
     background: url("../images/path.png") center top no-repeat;
 }
 
@@ -318,7 +317,7 @@ footer a {
     float:left;
 }
 
-aside {
+.sidebar {
     width:205px;
     height:640px;
     background-color:#3399cc;
@@ -559,10 +558,69 @@ form.search-controls .fake-select {
     overflow: hidden;
     padding: 0 20px 0 5px;
 }
+<<<<<<< HEAD
 /*------------------------------------------------------------------------*/
 /*---------------------------------COMMENT -------------------------------*/
 /*------------------------------------------------------------------------*/
 /*.form-comment form fieldset legend,
+=======
+/*==============================================================================
+.slidesjs-container, .slidesjs-control, .slider_JS {
+    width:200px !important;
+    height: 117px !important;
+}*/
+.content {
+    width:725px;
+    float:left;
+}
+aside{
+    width:205px;
+    height:640px;
+    background-color:#3399cc;
+    color:#fff;
+    float:right;
+    text-align:left;
+    padding: 20px 10px 20px 20px;
+    font-size:1em;
+    font-weight:bold;
+}
+
+.slider_JS {
+    width: 200px;
+    height: 117px;
+    display: block;
+    padding:9px;
+    margin:10px;
+    border:1px solid #ccc;
+    background-color:#fff;
+    -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); /* Для Firefox */
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); /* Для Safari и Chrome */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);	/* Параметры тени */
+}
+
+.star {
+    margin-left: 10px;
+    float:left;
+}
+.video-prewiev a {
+    text-decoration:none;
+    color: #333;
+    display: block;
+    clear:both;
+    padding-bottom: 5px;
+}
+.treeview ul{
+    background-color: #3399cc !important;
+}
+.treeview ul li a{
+    color:#fff;
+    font-size:14px;
+    text-decoration: none;
+}
+
+/*Comment*/
+.form-comment form fieldset legend,
+>>>>>>> d7210690e8a70628319f5076d84d6ebe68612ad4
 .send-additional-message h1 {
     background-color: rgba(0, 0, 0, 0.06);
     color: #333333;
