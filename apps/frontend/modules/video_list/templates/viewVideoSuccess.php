@@ -1,3 +1,9 @@
+<?php include_partial("video_list/subMenu"); ?>
+
+<aside>
+    <?php include_partial("video_list/menuTree"); ?>
+</aside>
+
 <h2><?php echo $video->getTitle(); ?> </h2>
 
 <div id="page">

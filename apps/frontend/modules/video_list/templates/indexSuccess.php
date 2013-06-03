@@ -1,3 +1,8 @@
+<?php include_partial("video_list/subMenu"); ?>
+
+<aside>
+    <?php include_partial("video_list/menuTree"); ?>
+</aside>
 
 <div>
     <ul class="video-prewiev">

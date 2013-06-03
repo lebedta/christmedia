@@ -2,13 +2,6 @@
 <html lang="ru">
   <head>
       <meta charset="utf-8">
-      <!-- <meta name="description" content="A description about your site">
-      <meta name="keywords" content="keywords, separated, by, comma">
-      <title></title>
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="stylesheet" href="css/style.css" media="screen">
-      <link rel="stylesheet" href="css/print.css" media="print">
-      <link rel="stylesheet" href="css/mobile.css" media="handheld"> -->
       <?php include_http_metas() ?>
       <?php include_metas() ?>
       <?php include_title() ?>
@@ -65,29 +58,7 @@
                   </div>
               </nav>
           <div class="center-background">
-              <div class="sub_menu">
-                  <div class="wrapper">
-                  <ul>
-                     <li>
-                       <a href="<?php echo url_for('@videos?order=d'); ?>">Добавленые</a>
-                     </li>
-                     <li>
-                       <a href="<?php echo url_for('@videos?order=v'); ?>">Просмотренные</a>
-                     </li>
-                     <li>
-                       <a href="<?php echo url_for('@videos?order=c'); ?>">Обсуждаемые</a>
-                     </li>
-                     <li>
-                       <a href="<?php echo url_for('@videos?order=r'); ?>">Лучшие</a>
-                     </li>
-                  </ul>
-                  </div>
-              </div>
-
               <div class="wrapper">
-                  <aside>
-                      <?php include_partial("video_list/menuTree"); ?>
-                  </aside>
                   <div class="content">
                     <?php echo $sf_content ?>
                   </div>
