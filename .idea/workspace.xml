@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="446ced58-7226-49b6-8d41-c891a6b06059" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Blueprint.iws" />
@@ -13,7 +13,7 @@
     <file path="/Dummy.txt" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370249997763" ignored="false" />
     <file path="/actions.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369338382892" ignored="false" />
     <file path="/CategoryTable.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1368533981497" ignored="false" />
-    <file path="/indexSuccess.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369633165528" ignored="false" />
+    <file path="/indexSuccess.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370264420143" ignored="false" />
     <file path="/schema.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1367758976973" ignored="false" />
     <file path="/dump_05_05_2013.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1367759225391" ignored="false" />
     <file path="/view.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1367764187592" ignored="false" />
@@ -27,11 +27,12 @@
     <file path="/RegistrationForm.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369331674315" ignored="false" />
     <file path="/a.dummy" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370128824804" ignored="false" />
     <file path="$PROJECT_DIR$/../localhost-foundershub/apps/frontend/config/search.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369337671926" ignored="false" />
-    <file path="/_loginform.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370128441477" ignored="false" />
-    <file path="/main.css" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370250180360" ignored="false" />
+    <file path="/_loginform.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370263512231" ignored="false" />
+    <file path="/main.css" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370265097552" ignored="false" />
     <file path="/layout.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370023584841" ignored="false" />
     <file path="/viewVideoSuccess.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370130029360" ignored="false" />
     <file path="/_form.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370128940325" ignored="false" />
+    <file path="/_profile_form.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370264250326" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,37 +52,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_list.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/templates/_list.php">
+      <file leaf-file-name="_loginform.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.0">
+            <state line="20" column="21" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewVideoSuccess.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/viewVideoSuccess.php">
+      <file leaf-file-name="indexSuccess.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="14" selection-start="509" selection-end="994" vertical-scroll-proportion="0.0">
+            <state line="8" column="35" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
+      <file leaf-file-name="_profile_form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="10.625">
+            <state line="5" column="7" selection-start="114" selection-end="114" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css.orig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/main.css.orig">
+      <file leaf-file-name="_profile.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -90,52 +91,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="320" column="5" selection-start="7607" selection-end="7607" vertical-scroll-proportion="0.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="components.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/actions/components.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="41" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseCommentComponents.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/lib/BaseCommentComponents.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="43" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/comment.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.fancybox-1.3.4.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/jquery.fancybox-1.3.4.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="826" column="6" selection-start="20644" selection-end="20644" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/templates/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="9" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+            <state line="457" column="12" selection-start="10289" selection-end="10289" vertical-scroll-proportion="0.7282609">
               <folding />
             </state>
           </provider>
@@ -159,21 +115,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/model/doctrine/VideoTable.class.php" />
         <option value="$PROJECT_DIR$/apps/frontend/config/routing.yml" />
         <option value="$PROJECT_DIR$/lib/form/RegistrationForm.class.php" />
         <option value="$PROJECT_DIR$/plugins/sfDoctrineGuardPlugin/config/doctrine/schema.yml" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php" />
-        <option value="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php" />
         <option value="$PROJECT_DIR$/apps/frontend/templates/layout.php" />
-        <option value="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" />
         <option value="$PROJECT_DIR$/lib/model/doctrine/sfGuardUserProfile.class.php" />
         <option value="$PROJECT_DIR$/plugins/vjCommentPlugin_old/modules/comment/templates/_list.php" />
         <option value="$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/templates/_list.php" />
         <option value="$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/templates/_form.php" />
         <option value="$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/lib/BaseCommentComponents.class.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/viewVideoSuccess.php" />
+        <option value="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" />
+        <option value="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile_form.php" />
+        <option value="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
       </list>
     </option>
@@ -259,6 +215,236 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="christmedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,80 +617,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/model/doctrine/sfDoctrineGuardPlugin/base/BasesfGuardUser.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="41" selection-start="8983" selection-end="9001" vertical-scroll-proportion="-4.2916665" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="71" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-6.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/model/doctrine/sfGuardUserProfile.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-14.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/form/ProfileForm.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="168" selection-end="168" vertical-scroll-proportion="0.092402466" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin_old/modules/comment/templates/_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/i18n/es/vjComment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="16" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/templates/_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/templates/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="9" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jquery.fancybox-1.3.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="826" column="6" selection-start="20644" selection-end="20644" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/comment.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/actions/components.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/lib/BaseCommentComponents.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="43" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/viewVideoSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="14" selection-start="509" selection-end="994" vertical-scroll-proportion="0.0">
@@ -514,7 +626,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="10.625">
+        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_notice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/_captcha_field.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/_field.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/activateSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/registrationProceedSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/indexSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/indexSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -526,9 +694,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="21" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-12.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="114" selection-end="114" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="35" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="320" column="5" selection-start="7607" selection-end="7607" vertical-scroll-proportion="0.5">
+        <state line="457" column="12" selection-start="10289" selection-end="10289" vertical-scroll-proportion="0.7282609">
           <folding />
         </state>
       </provider>

@@ -179,56 +179,54 @@ header {
     float: right;
 }
 .login-form {
-    background: rgba(255, 255, 255, 0.8);
-    height: 46px;
-    overflow: hidden;
     position: absolute;
     right: 0;
     top: 17px;
     z-index: 12000;
     padding: 0;
-    font: 14px/34px Arial;
+    font: 14px Arial;
     max-width: 300px;
-}
 
+}
+.login-form .login-name {
+    border-bottom: 1px solid #2D5AC3;
+    height: 42px;
+}
 .login-form.clicked {
     height: 140px;
     outline: 2px solid #D8D8D8;
 }
 .login-form a {
-    background-color: #F2F6F9;
     display: block;
-    text-align: center;
+    float: left;
     text-transform: capitalize;
     color: #333;
     text-decoration: none;
-    clear: both;
-    overflow: hidden;
-    padding: 6px 0;
-    border-top: 1px solid #D6D6D6;
+    padding: 2px 6px;
     z-index: 50;
+    color:#2D5AC3;
 }
 
 .login-form a:hover {
-    background-color: #00457C;
-    color: #FFF;
+     color: #FFF;
 }
 
 .login-form img {
     border: 1px solid #C0C0C0;
     border-radius: 2px 2px 2px 2px;
-    float: right;
+    float: left;
     height: 30px;
-    margin: 6px 6px 0 5px;
+    margin: 6px;
     width: 30px;
 }
 
 .login-form span.user-name {
-    background: url("../images/login_form_bg.png") no-repeat right center;
+    /*background: url("../images/login_form_bg.png") no-repeat right center;*/
     display: block;
     float: right;
-    padding: 6px 20px 6px 0;
-    margin: 0 5px 0 6px;
+    margin: 6px;
+    font-style:italic;
+    padding-top: 10px;
 }
 
 /*------------------------------------------------------------------------*/
@@ -409,14 +407,14 @@ form table td input[type='submit'] {
 }
 /*------------------------------------------------------------------------*/
 /*---------------------------------registration FORM----------------------*/
-/*------------------------------------------------------------------------*/
-form fieldset {
+/*---------------------------------profile FORM---------------------------*/
+fieldset {
     margin-bottom: 10px;
 }
-form fieldset dl {
+fieldset dl {
     width: 400px;
 }
-form dt {
+dt {
     width: 130px;
     display: block;
     padding-right: 5px;
@@ -425,19 +423,20 @@ form dt {
     text-align: left;
     clear:both;
     float: left;
+    font-weight: bold;
 }
 
-form dt label {
+dt label {
     font-weight: bold;
 
 }
-form fieldset dd {
+fieldset dd {
 float: right;
 margin-bottom: 12px;
 }
 
 
-form fieldset dd input[type='text'], form fieldset dd input[type='password']{
+fieldset dd input[type='text'], form fieldset dd input[type='password']{
 
     font: 14px Helvetica;
     color: #333;
@@ -450,11 +449,17 @@ form fieldset dd input[type='text'], form fieldset dd input[type='password']{
 
 }
 
-form input[type='submit'] {
+input[type='submit'], input[type='button'] {
     padding: 3px 7px;
-    width: 100px;
+    min-width: 100px;
+    margin-right: 7px;
 }
-
+fieldset.profile_form dl {
+    width:270px;
+}
+fieldset.profile_form dd {
+    padding-top: 6px;
+}
 /*------------------------------------------------------------------------*/
 /*--------------------------UPLOAD VIDEO FORM-----------------------------*/
 /*------------------------------------------------------------------------*/
@@ -695,4 +700,8 @@ form.search-controls .fake-select {
 .view{
     float:right;
     margin-right:10px;
+}
+#compleate {
+    font-size: 14px;
+    line-height: 24px;
 }

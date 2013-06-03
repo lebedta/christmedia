@@ -13,10 +13,12 @@
         <?php else: ?>
 <!--            <h1 class="logo"><a href="--><?php //echo url_for('@dashboard?domain_name='.sfContext::getInstance()->getUser()->getProfile()->getCompany()->getSubDomain()) ?><!--">--><?php //echo sfContext::getInstance()->getUser()->getProfile()->getCompany()->getName(); ?><!--</a></h1>-->
             <div class="login-form">
+                <div class="login-name">
                 <img src="<?php echo $user->getGuardUser()->getProfile()->getUserAvatar(32) ?>" alt="<?php echo $user->getGuardUser()->getFullName(); ?>" />
                 <span class="user-name">
                     <?php echo $user->getGuardUser()->getFullName(); ?>
-                </span>
+                </span><br/>
+                </div>
                 <!--<a href="--><?php //echo url_for('@profile') ?><!--">profile</a>-->
                 <!--<a href="--><?php //echo url_for('@user_info?domain_name='.sfContext::getInstance()->getUser()->getProfile()->getCompany()->getSubDomain().'&id='.sfContext::getInstance()->getUser()->getGuardUser()->getId()); ?><!--">profile</a>-->
                 <a href="<?php echo url_for('@sf_guard_signout') ?>">logout</a>

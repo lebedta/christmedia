@@ -6,7 +6,7 @@
     <div> <?php echo $sf_user->getFlash('notice') ?> </div>
 
     <h2>My profile</h2>
-    <fieldset>
+    <fieldset  class="profile_form">
         <?php include_partial('profiler/profile', array('user' => $user))?>
     </fieldset>
 
