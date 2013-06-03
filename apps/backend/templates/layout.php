@@ -9,8 +9,11 @@
     <?php include_javascripts() ?>
 </head>
 <body>
-    <?php include_component('sfAdminDash','header'); ?>
+<?php include_component('sfAdminDash','header'); ?>
+
+<div>
     <?php echo $sf_content ?>
-     <?php include_partial('sfAdminDash/footer'); ?>
+</div>
+<?php include_partial('sfAdminDash/footer'); ?>
 </body>
 </html>

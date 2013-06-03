@@ -68,20 +68,6 @@ all:
             url:          users
             image:        users.png
             credentials:  [superadmin]
-      Conent:
-        items:
-          Languages:
-            url:          language
-            image:        language.png
-            credentials:  [superadmin]
-          Categories:
-            url:          category
-            image:        categories.png
-            credentials:  [superadmin]
-          Articles:
-            url:          article
-            image:        addedit.png
-            credentials:  [superadmin]
 
 
   email_notification:

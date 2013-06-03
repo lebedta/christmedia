@@ -12,7 +12,7 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:    #[main.css]
 
   javascripts:    ['/js/tiny_mce/plugins/tinybrowser/tb_tinymce.js.php']
 

@@ -42,5 +42,11 @@ all:
     login_module:           sfGuardAuth
     login_action:           signin
 
-    secure_module:          sfGuardAuth
-    secure_action:          secure
+  .actions:
+    # page not found
+    error_404_module:       errors     # module "errors"
+    error_404_action:       error404   # action "executeError404"
+
+    # 403 credential required
+    secure_module:          errors     # module "errors"
+    secure_action:          error403   # action "executeError403"
