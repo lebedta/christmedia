@@ -24,12 +24,13 @@ class profilerActions extends sfActions
     public function executeEditProfile(sfWebRequest $request)
     {
         $this->form = new ProfileForm($this->getUser()->getGuardUser());
-        if ($request->isMethod(sfRequest::POST))
+        if($request->isMethod("post"))
         {
-            $this->form->bind($request->getParameter($this->form->getName()));
+            $this->form->bind($request->getParameter($this->form->getName()), $request->getFiles($this->form->getName()));
             if($this->form->isValid())
             {
                 $this->form->save();
+
                 $this->getUser()->setFlash('notice', "You successfully update your profile");
                 $this->redirect('profile');
             }

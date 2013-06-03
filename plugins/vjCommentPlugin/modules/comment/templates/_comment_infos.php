@@ -20,7 +20,7 @@
         <?php echo image_tag("avatar_default_100.jpg") ?>
         <?php else: ?>
             <?php $image_file_name = explode(".", $pr_avatar); ?>
-        <img src="/uploads/companies/company_<?php echo $obj['pr_company_id']; ?>/<?php echo $image_file_name[0]."_100.".$image_file_name[1]; ?>">
+        <img src="/uploads/avatar/<?php echo $image_file_name[0]."_100.".$image_file_name[1]; ?>">
         <?php endif ?>
 
         <?php echo $user_name ?>
