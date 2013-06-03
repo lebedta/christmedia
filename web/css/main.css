@@ -50,6 +50,24 @@ a, a img {
     border:0px;
     outline:none;
 }
+h1 {
+    font-size: 24px;
+}
+
+h2{
+    font-size: 20px;
+}
+h4{
+    font-size: 16px;
+    padding:4px;
+}
+
+h1, h2 {
+    padding: 10px;
+    letter-spacing:-1px;
+    color:#2D5AC3;
+    font-weight:normal;
+}
 
 @font-face { font-family: BradlyHandITC; src: url(/fonts/bradhitc_bold.ttf); }
 
@@ -289,89 +307,7 @@ ul.path li h2 {
     font-family: Arial;
 }
 
-/*------------------------------------------------------------------------*/
-/*---------------------------------TOP SEARCH-----------------------------*/
-/*------------------------------------------------------------------------*/
-.search-form{
-    float: right;
-    margin-top: 22px;
-}
-form.search-controls {
-    border: 1px solid #5A7286;
-    border-radius: 5px;
-    background: #FFFFFF;
-    padding: 3px 5px 3px 15px;
-    height: 19px;
-}
-form.search-controls input{
-    background: transparent;
-    border: none;
-    font-size: 11px;
-    color: #666666;
-    padding: 4px 0 0;
-    font-family: Arial;
-    line-height: 14px;
-}
-form.search-controls input[type="text"] {
-    color: #999999;
-    font-style: italic;
-    float: left;
-    height: 20px;
-    padding: 0;
-    line-height: 22px;
-}
 
-form.search-controls input[type="submit"] {
-    margin: 0 0 0 3px;
-    text-transform: uppercase;
-}
-
-form.search-controls select {
-    background: transparent;
-    border: none;
-    font-size: 11px;
-    color: #666666;
-    font-family: Arial;
-    filter: alpha(opacity=0);
-    opacity: 0;
-}
-form.search-controls .fake-select {
-    background: none;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100px;
-}
-
-.fake-select {
-    overflow: hidden;
-    position: relative;
-    float: left;
-    margin: 3px 5px 0 0;
-}
-
-.fake-select select {
-    background: #E8E8E8;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-    width: 100%;
-}
-
-.fake-select .textfield {
-    background: url(../images/select_bg.png) no-repeat right center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100%;
-    font: 12px/23px Helvetica;
-    color: #666;
-    overflow: hidden;
-    padding: 0 20px 0 5px;
-}
 /*==============================================================================
 .slidesjs-container, .slidesjs-control, .slider_JS {
     width:200px !important;
@@ -427,8 +363,206 @@ form.search-controls .fake-select {
     text-decoration: none;
 }
 
-/*Comment*/
-.form-comment form fieldset legend,
+
+/*------------------------------------------------------------------------*/
+/*---------------------------------signIN FORM----------------------------*/
+/*------------------------------------------------------------------------*/
+form{
+    padding: 10px;
+    width: 100%;
+}
+
+form tbody, form tfoot {
+    margin-bottom: 10px;
+    display: block;
+}
+
+form tr{
+    padding-bottom: 8px;
+    display: block;
+}
+form td{
+    text-align: right;
+}
+form th {
+    width: 130px;
+    padding-right: 5px;
+    text-align: left;
+}
+form th label {
+    font-weight: bold;
+}
+form table td input[type='text'], form table td input[type='password']{
+    width: 300px;
+    font: 14px Helvetica;
+    color: #333;
+    background-color: #FFF;
+    border: 1px solid #5A7286;
+    border-radius: 3px;
+    padding:  4px;
+    margin:0;
+    float: right;
+}
+form table td input[type='submit'] {
+    padding: 3px 7px;
+    width: 100px;
+}
+/*------------------------------------------------------------------------*/
+/*---------------------------------registration FORM----------------------*/
+/*------------------------------------------------------------------------*/
+form fieldset {
+    margin-bottom: 10px;
+}
+form fieldset dl {
+    width: 400px;
+}
+form dt {
+    width: 130px;
+    display: block;
+    padding-right: 5px;
+    padding-bottom: 8px;
+    padding-top: 6px;
+    text-align: left;
+    clear:both;
+    float: left;
+}
+
+form dt label {
+    font-weight: bold;
+
+}
+form fieldset dd {
+float: right;
+margin-bottom: 12px;
+}
+
+
+form fieldset dd input[type='text'], form fieldset dd input[type='password']{
+
+    font: 14px Helvetica;
+    color: #333;
+    background-color: #FFF;
+    border: 1px solid #5A7286;
+    border-radius: 3px;
+    padding:  4px;
+    margin:0;
+    width: 250px;
+
+}
+
+form input[type='submit'] {
+    padding: 3px 7px;
+    width: 100px;
+}
+
+/*------------------------------------------------------------------------*/
+/*--------------------------UPLOAD VIDEO FORM-----------------------------*/
+/*------------------------------------------------------------------------*/
+form#this_form fieldset dd textarea{
+    width: 250px;
+    padding:  2px;
+}
+
+form#this_form fieldset dd input[type='file'] {
+    padding:  4px;
+}
+form#this_form fieldset dl {
+    width: 420px;
+}
+form#this_form fieldset dd input[type='text'],
+form#this_form fieldset dd input[type='password'],
+form#this_form fieldset dd textarea{
+    width:260px;}
+
+ /*------------------------------------------------------------------------*/
+/*---------------------------------SEARCH FORM-----------------------------*/
+/*------------------------------------------------------------------------*/
+.search-form{
+    float: right;
+    margin-top: 22px;
+}
+form.search-controls {
+    border: 1px solid #5A7286;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 3px 5px 3px 15px;
+    height: 19px;
+}
+form.search-controls input{
+    background: transparent;
+    border: none;
+    font-size: 11px;
+    color: #666666;
+    padding: 4px 0 0;
+    font-family: Arial;
+    line-height: 14px;
+}
+form.search-controls input[type="text"] {
+    color: #999999;
+    font-style: italic;
+    float: left;
+    height: 20px;
+    padding: 0;
+    line-height: 22px;
+}
+
+form.search-controls input[type="submit"] {
+    margin: 0 0 0 3px;
+    text-transform: uppercase;
+    padding: 4px 0 0;
+    width: auto;
+}
+
+form.search-controls select {
+    background: transparent;
+    border: none;
+    font-size: 11px;
+    color: #666666;
+    font-family: Arial;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+form.search-controls .fake-select {
+    background: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.fake-select {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 3px 5px 0 0;
+}
+
+.fake-select select {
+    background: #E8E8E8;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.fake-select .textfield {
+    background: url(../images/select_bg.png) no-repeat right center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font: 12px/23px Helvetica;
+    color: #666;
+    overflow: hidden;
+    padding: 0 20px 0 5px;
+}
+/*------------------------------------------------------------------------*/
+/*---------------------------------COMMENT -------------------------------*/
+/*------------------------------------------------------------------------*/
+/*.form-comment form fieldset legend,
 .send-additional-message h1 {
     background-color: rgba(0, 0, 0, 0.06);
     color: #333333;
@@ -492,14 +626,61 @@ form.search-controls .fake-select {
     margin: 20px auto;
     width: 100px;
 }
+*/
+.comment {
+    border-top: 1px dotted #B1B1B1;
+    clear: both;
+    margin: 0 0 30px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+.comment .avtor {
+    border: 1px solid #E4E4E4;
+    box-shadow: 0 0 1px #F3F3F3;
+    color: #333333;
+    float: left;
+    font: 13px/120% BradlyHandITC;
+    margin: 5px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 112px;
+}
+.comment .re {display:none;}
+.comment .body {
+    color: #333333;
+    font: 13px/150% Arial;
+    margin: 20px 0;
+    width:550px;
+    float:right;
+    text-align: left;
+}
+
+.comment .reply-quote {
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+.comment .reply-quote a {
+    color: #999999;
+    cursor: pointer;
+    font: 11px Arial;
+    margin: 0 5px;
+    text-decoration: none;
+}
 
 .comment ul table tbody tr td {
     padding: 0 0 0 40px;
     width: 100%;
 }
-
-.comment ul table tbody tr td:last-of-type {
-    /*padding:  0;*/
+.comment ul table tbody tr td .body{
+    width:510px;
+}
+.comment ul table tbody tr td .re{
+    display: inline;
+    float: left;
+    padding-top: 5px;
 }
 
 .comment table.list-comments tbody tr td {
@@ -509,4 +690,9 @@ form.search-controls .fake-select {
 .comment tr td .cell-wrapper {
     position: relative;
     overflow: hidden;
+}
+
+.view{
+    float:right;
+    margin-right:10px;
 }

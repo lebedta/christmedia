@@ -20,7 +20,7 @@
     jQuery('#video_file').bind('change', function() {
         if(this.files[0].size > 1073741824)
         {
-            call_error_message("Файл прывисил 1Гб ",jQuery("#video_file").parent().prev());
+            call_error_message("Файл больше 1Гб ",jQuery("#video_file").parent().prev());
             error = true;
         }
     });
@@ -29,7 +29,7 @@
         var error = false;
         if(jQuery("#video_title").val() == "")
         {
-            call_error_message("Назавние должно быть заполнено ",jQuery("#video_title").parent().prev());
+            call_error_message("Название должно быть заполнено ",jQuery("#video_title").parent().prev());
             error = true;
         }
         if(jQuery("#video_description").val() == "")

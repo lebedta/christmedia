@@ -12,9 +12,10 @@
 <h4><?php echo $video->getDescription(); ?> </h4>
 <div id="star_<?php echo $video->getId(); ?>" class="star"></div>
 
-<span>
+<span class="view" >
     Просмотров: <?php echo $video->getVideoWatching()->count(); ?>
 </span>
+
 <div class="comment">
     <?php include_component('comment', 'list', array('object' => $video, 'i' => 0)) ?>
     <?php if (sfContext::getInstance()->getUser()->isAuthenticated()): ?>
