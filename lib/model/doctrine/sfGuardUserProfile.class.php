@@ -29,11 +29,11 @@ class sfGuardUserProfile extends BasesfGuardUserProfile
         {
             $image_file_name = explode(".", $this->getAvatar());
 
-            return "/uploads/companies/company_".$this->getCompanyId().'/'.$image_file_name[0]."_".$param.".".$image_file_name[1];
+            return "/uploads/avatar/".$image_file_name[0]."_".$param.".".$image_file_name[1];
         }
         else
         {
-            return "/uploads/companies/company_".$this->getCompanyId().'/'.$this->getAvatar();
+            return '/uploads/avatar/'.$this->getAvatar();
         }
     }
 }

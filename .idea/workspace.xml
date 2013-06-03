@@ -2,15 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446ced58-7226-49b6-8d41-c891a6b06059" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/_y.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/_z.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/calendar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/optimization.lock.file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/read-lock-processing.lock.file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/read.lock.file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/segments_1r" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/write.lock.file" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/form/UserProfileForm.class.php" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/christmedia.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments.gen" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/form/ProfileForm.class.php" afterPath="$PROJECT_DIR$/lib/form/ProfileForm.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/form/doctrine/VideoForm.class.php" afterPath="$PROJECT_DIR$/lib/form/doctrine/VideoForm.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/templates/_comment_infos.php" afterPath="$PROJECT_DIR$/plugins/vjCommentPlugin/modules/comment/templates/_comment_infos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile_form.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/profiler/actions/actions.class.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/profiler/actions/actions.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/editProfileSuccess.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/editProfileSuccess.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/doctrine/schema.yml" afterPath="$PROJECT_DIR$/config/doctrine/schema.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/model/doctrine/sfGuardUserProfile.class.php" afterPath="$PROJECT_DIR$/lib/model/doctrine/sfGuardUserProfile.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/video/templates/uploadVideoSuccess.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/video/templates/uploadVideoSuccess.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/video/config/view.yml" afterPath="$PROJECT_DIR$/apps/frontend/modules/video/config/view.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Blueprint.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370249997763" ignored="false" />
+    <file path="/Dummy.txt" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370265824096" ignored="false" />
     <file path="/actions.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369338382892" ignored="false" />
     <file path="/CategoryTable.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1368533981497" ignored="false" />
     <file path="/indexSuccess.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370264420143" ignored="false" />
@@ -55,7 +79,7 @@
       <file leaf-file-name="_loginform.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-12.5">
+            <state line="20" column="21" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,7 +88,7 @@
       <file leaf-file-name="indexSuccess.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="35" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.0">
+            <state line="8" column="35" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,7 +97,7 @@
       <file leaf-file-name="_profile_form.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="114" selection-end="114" vertical-scroll-proportion="-3.125">
+            <state line="7" column="7" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,7 +106,7 @@
       <file leaf-file-name="_profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="-0.0">
+            <state line="6" column="3" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,7 +115,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="457" column="12" selection-start="10289" selection-end="10289" vertical-scroll-proportion="0.7282609">
+            <state line="457" column="12" selection-start="10269" selection-end="10269" vertical-scroll-proportion="0.027173912">
               <folding />
             </state>
           </provider>
@@ -471,8 +495,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../localhost-foundershub" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -532,13 +556,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="721" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25075758" sideWeight="0.6466431" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25454545" sideWeight="0.6466431" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -619,112 +643,90 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/viewVideoSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="509" selection-end="994" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="14" selection-start="509" selection-end="994" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="6.875">
-          <folding />
-        </state>
+        <state line="1" column="6" selection-start="22" selection-end="22" vertical-scroll-proportion="6.875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_notice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/_captcha_field.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/_field.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/activateSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/registrationProceedSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/indexSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/indexSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/registration/templates/_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css.orig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/home/templates/_loginform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-12.5">
+        <state line="20" column="21" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="114" selection-end="114" vertical-scroll-proportion="-3.125">
+        <state line="7" column="7" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+        <state line="6" column="3" selection-start="155" selection-end="155" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.0">
+        <state line="8" column="35" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="457" column="12" selection-start="10289" selection-end="10289" vertical-scroll-proportion="0.7282609">
+        <state line="457" column="12" selection-start="10269" selection-end="10269" vertical-scroll-proportion="0.027173912">
           <folding />
         </state>
       </provider>

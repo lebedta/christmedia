@@ -76,4 +76,23 @@
        }
        return false;
     });
+
+    jQuery(document).ready(function(){
+        jQuery("#video_filming_date").datepicker({
+            showOn: "button",
+            buttonImage: "/images/calendar.gif",
+            buttonImageOnly: true
+        });
+
+        //revers start date
+        var start_date_string = jQuery("#video_filming_date").val();
+        if(start_date_string.length >0)
+        {
+            var start_date_array = start_date_string.split("-");
+            if(start_date_array.length>1)
+            {
+                jQuery("#video_filming_date").val(start_date_array[1]+"/"+start_date_array[2]+"/"+start_date_array[0]);
+            }
+        }
+    });
 </script>
