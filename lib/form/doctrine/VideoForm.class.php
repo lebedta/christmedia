@@ -37,7 +37,7 @@ class VideoForm extends BaseVideoForm
             'mime_types' => array('txt')));
 
         $this->widgetSchema['filming_place'] = new sfWidgetFormInput();
-        $this->widgetSchema['filming_date'] = new sfWidgetFormDateTime();
+        $this->widgetSchema['filming_date'] = new sfWidgetFormInput();
 
         $this->widgetSchema->setLabel("title", "Название");
         $this->widgetSchema->setLabel("description", "Описание");

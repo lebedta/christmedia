@@ -394,7 +394,7 @@ form th label {
 }
 form table td input[type='text'], form table td input[type='password']{
     width: 300px;
-    font: 14px Helvetica;
+    font: 14px;
     color: #333;
     background-color: #FFF;
     border: 1px solid #5A7286;
@@ -439,7 +439,7 @@ margin-bottom: 12px;
 
 form fieldset dd input[type='text'], form fieldset dd input[type='password']{
 
-    font: 14px Helvetica;
+    font: 14px;
     color: #333;
     background-color: #FFF;
     border: 1px solid #5A7286;
