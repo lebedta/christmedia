@@ -1,13 +1,13 @@
 generator:
   class: sfDoctrineGenerator
   param:
-    model_class:           Category
+    model_class:           Video
     theme:                 admin
     non_verbose_templates: true
     with_show:             false
     singular:              ~
     plural:                ~
-    route_prefix:          category
+    route_prefix:          video
     with_doctrine_route:   true
     actions_base_class:    sfActions
 
@@ -15,8 +15,8 @@ generator:
       actions: ~
       fields:  ~
       list:
-        title: Categories
-        display: [=title, Category]
+        title: Videos
+        display: [=title, description, sfGuardUser, category, duration, is_active, is_scrinshot ]
       filter:  ~
       form:    ~
       edit:    ~

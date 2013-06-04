@@ -36,17 +36,11 @@ all:
 
     enabled_modules:        [default, sfGuardGroup, sfGuardUser, sfGuardPermission, sfGuardAuth, sfAdminDash]
     standard_helpers:       [Partial, Cache, I18N, Captcha]
-    i18n:                   true
+    i18n:                   false
 
 
     login_module:           sfGuardAuth
     login_action:           signin
 
-  .actions:
-    # page not found
-    error_404_module:       errors     # module "errors"
-    error_404_action:       error404   # action "executeError404"
-
-    # 403 credential required
-    secure_module:          errors     # module "errors"
-    secure_action:          error403   # action "executeError403"
+    secure_module:          sfGuardAuth
+    secure_action:          secure

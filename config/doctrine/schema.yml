@@ -14,6 +14,16 @@ ActivationCode:
   relations:
     sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: ActivationCode }
 
+Category:
+  columns:
+    title:              { type: string(255), notnull: true }
+    description:        { type: text, notnull: true }
+    parent_id:          { type: integer }
+  relations:
+    Category:      { local: parent_id, foreign: id}
+  actAs:
+    Timestampable: ~
+
 Language:
   columns:
     name:               { type: string(255), notnull: true }
@@ -69,16 +79,6 @@ Scrinshot:
      Video:          { onDelete: CASCADE, local: video_id, foreign: id, foreignAlias: Video }
   actAs:
      Timestampable: ~
-
-Category:
-  columns:
-    title:              { type: string(255), notnull: true }
-    description:        { type: text, notnull: true }
-    parent_id:          { type: integer }
-  relations:
-    Category:           { local: parent_id, foreign: id }
-  actAs:
-    Timestampable: ~
 
 VideoRating:
   columns:

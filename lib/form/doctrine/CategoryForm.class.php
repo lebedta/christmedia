@@ -17,6 +17,6 @@ class CategoryForm extends BaseCategoryForm
             $this['updated_at']
         );
 
-        $this->embedI18n(LanguageTable::getLanguagesArray());
+        //$this->embedI18n(LanguageTable::getLanguagesArray());
     }
 }

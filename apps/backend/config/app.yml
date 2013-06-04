@@ -68,6 +68,14 @@ all:
             url:          users
             image:        users.png
             credentials:  [superadmin]
+          Videos Management:
+            url:          video
+            image:        users.png
+            credentials:  [superadmin]
+          Categories Management:
+            url:          category
+            image:        users.png
+            crentials:  [superadmin]
 
 
   email_notification:
