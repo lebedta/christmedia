@@ -11,6 +11,9 @@ MyIndex:
         description:
           boost: 1.5
           type: text
+        creator: text
+        scrinshot: unindexed
+        is_scrinshot: unindexed
 
 
   index:

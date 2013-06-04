@@ -76,7 +76,7 @@ Scrinshot:
     file:           { type: string(255), notnull: true }
     video_id:      { type: integer }
   relations:
-     Video:          { onDelete: CASCADE, local: video_id, foreign: id, foreignAlias: Video }
+     Video:          { onDelete: CASCADE, local: video_id, foreign: id, class: Video }
   actAs:
      Timestampable: ~
 

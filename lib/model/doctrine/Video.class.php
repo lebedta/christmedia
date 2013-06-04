@@ -58,4 +58,20 @@ class Video extends BaseVideo
             return 'false';
         }
     }
+
+    public function getCreator()
+    {
+        return $this->getSfGuardUser()->getFullName();
+    }
+
+    public function getScrinshot()
+    {
+        $query = Doctrine_Query::create()
+            ->select('file')
+            ->from('Scrinshot')
+            ->where('video_id = ?', $this->getId())
+            ->execute()->getFirst();
+
+        return '/uploads/scrinshot/'.$query['file'];
+    }
 }

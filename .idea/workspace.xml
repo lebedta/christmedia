@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446ced58-7226-49b6-8d41-c891a6b06059" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_subMenu.php" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/christmedia.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/_m.cfs" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/_n.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/_y.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/_z.cfs" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments_16" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/templates/layout.php" afterPath="$PROJECT_DIR$/apps/frontend/templates/layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/viewVideoSuccess.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/viewVideoSuccess.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments_1r" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments.gen" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/model/doctrine/Video.class.php" afterPath="$PROJECT_DIR$/lib/model/doctrine/Video.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_searchResult.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_searchResult.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/doctrine/schema.yml" afterPath="$PROJECT_DIR$/config/doctrine/schema.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/search.yml" afterPath="$PROJECT_DIR$/config/search.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Blueprint.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370356101010" ignored="false" />
-    <file path="/actions.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1369338382892" ignored="false" />
+    <file path="/actions.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370377162533" ignored="false" />
     <file path="/CategoryTable.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1368533981497" ignored="false" />
     <file path="/indexSuccess.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370356425522" ignored="false" />
     <file path="/schema.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370298131654" ignored="false" />
@@ -45,6 +48,9 @@
     <file path="/generator.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370328031551" ignored="false" />
     <file path="$PROJECT_DIR$/cache/frontend/prod/config/config_app.yml.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370299115210" ignored="false" />
     <file path="/settings.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370327012293" ignored="false" />
+    <file path="/_searchResult.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370379460507" ignored="false" />
+    <file path="/Video.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370379165148" ignored="false" />
+    <file path="/search.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370376789499" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,60 +70,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
+      <file leaf-file-name="_searchResult.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_searchResult.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="2583" selection-end="2583" vertical-scroll-proportion="-13.75">
+            <state line="5" column="88" selection-start="217" selection-end="217" vertical-scroll-proportion="-1.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewVideoSuccess.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/viewVideoSuccess.php">
+      <file leaf-file-name="search.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/search.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="6" selection-start="1251" selection-end="1251" vertical-scroll-proportion="-5.0833335">
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indexSuccess.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="14" column="28" selection-start="291" selection-end="300" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_profile.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php">
+      <file leaf-file-name="actions.class.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="66" selection-start="80" selection-end="80" vertical-scroll-proportion="0.061601643">
+            <state line="40" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.2402746">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexSuccess.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php">
+      <file leaf-file-name="Video.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/model/doctrine/Video.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="139" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="74" column="24" selection-start="1759" selection-end="1759" vertical-scroll-proportion="-22.2">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_subMenu.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_subMenu.php">
+      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="6" selection-start="565" selection-end="565" vertical-scroll-proportion="-10.625">
+            <state line="8" column="10" selection-start="262" selection-end="272" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="databases.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/databases.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseVideo.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/model/doctrine/base/BaseVideo.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="171" column="33" selection-start="8107" selection-end="8116" vertical-scroll-proportion="-11.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scrinshot.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/model/doctrine/Scrinshot.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="29" selection-start="280" selection-end="280" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseScrinshot.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/model/doctrine/base/BaseScrinshot.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="21" selection-start="1314" selection-end="1320" vertical-scroll-proportion="-10.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/doctrine/schema.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="84" selection-start="3319" selection-end="3319" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,12 +178,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/apps/backend/config/app.yml" />
-        <option value="$PROJECT_DIR$/cache/backend/dev/modules/autoCategory/lib/BaseCategoryGeneratorConfiguration.class.php" />
-        <option value="$PROJECT_DIR$/apps/backend/modules/video/config/generator.yml" />
-        <option value="$PROJECT_DIR$/lib/model/doctrine/base/BaseVideoCategory.class.php" />
         <option value="$PROJECT_DIR$/apps/backend/modules/category/actions/actions.class.php" />
-        <option value="$PROJECT_DIR$/config/doctrine/schema.yml" />
         <option value="$PROJECT_DIR$/lib/plugins/sfDoctrinePlugin/lib/form/sfFormDoctrine.class.php" />
         <option value="$PROJECT_DIR$/apps/backend/config/factories.yml" />
         <option value="$PROJECT_DIR$/apps/backend/config/settings.yml" />
@@ -157,6 +189,11 @@
         <option value="$PROJECT_DIR$/apps/frontend/templates/layout.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/viewVideoSuccess.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php" />
+        <option value="$PROJECT_DIR$/config/doctrine/schema.yml" />
+        <option value="$PROJECT_DIR$/config/search.yml" />
+        <option value="$PROJECT_DIR$/lib/model/doctrine/Video.class.php" />
+        <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_searchResult.php" />
+        <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php" />
       </list>
     </option>
   </component>
@@ -208,6 +245,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scrinshot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,6 +367,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -405,6 +560,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="video_list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="profiler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -458,6 +643,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -632,63 +839,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/backend/config/factories.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="44" selection-start="949" selection-end="949" vertical-scroll-proportion="0.60820895" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/doctrine/schema.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="634" selection-end="906" vertical-scroll-proportion="3.4642856" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/backend/modules/video/config/generator.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="524" selection-end="586" vertical-scroll-proportion="0.64579254" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/backend/config/app.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="36" selection-start="3220" selection-end="3350" vertical-scroll-proportion="0.6084337" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/backend/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="172" selection-end="185" vertical-scroll-proportion="0.14677104" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/model/doctrine/base/BaseCategory.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="36" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.63039017" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/backend/config/settings.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="33" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.63619405" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/form/doctrine/VideoForm.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7955912" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/form/doctrine/CategoryForm.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="393" selection-end="446" vertical-scroll-proportion="0.5566406" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/backend/modules/category/config/generator.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="34" selection-start="465" selection-end="465" vertical-scroll-proportion="0.5555556" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_subMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="565" selection-end="565" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="0" selection-start="2583" selection-end="2583" vertical-scroll-proportion="-13.75">
@@ -700,7 +850,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="139" vertical-scroll-proportion="-0.0">
           <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{&quot;path&quot;: &quot;/rating&quot;...}" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{&quot;pagination&quot;: false...}" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{&quot;active&quot;: true...}" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{&quot;speed&quot;: 200...}" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{&quot;speed&quot;: 200...}" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1370356467000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -718,13 +888,92 @@
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/indexSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1370266042000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/profiler/templates/_profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="66" selection-start="80" selection-end="80" vertical-scroll-proportion="0.061601643">
+        <state line="2" column="66" selection-start="80" selection-end="80" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model/doctrine/sfDoctrineGuardPlugin/sfGuardUser.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="31" selection-start="742" selection-end="753" vertical-scroll-proportion="-11.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/doctrine/schema.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="84" selection-start="3319" selection-end="3319" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model/doctrine/base/BaseVideo.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="33" selection-start="8107" selection-end="8116" vertical-scroll-proportion="-11.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model/doctrine/Scrinshot.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="29" selection-start="280" selection-end="280" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model/doctrine/base/BaseScrinshot.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="21" selection-start="1314" selection-end="1320" vertical-scroll-proportion="-10.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/search.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="291" selection-end="300" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/databases.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/model/doctrine/Video.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="24" selection-start="1759" selection-end="1759" vertical-scroll-proportion="-22.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="262" selection-end="272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_searchResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="88" selection-start="217" selection-end="217" vertical-scroll-proportion="-1.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.2402746">
           <folding />
         </state>
       </provider>
