@@ -1,6 +1,6 @@
 <dl>
     <dt>
-        <img src="<?php echo $user->getProfile()->getUserAvatar(32) ?>" alt="<?php echo $user->getFullName(); ?>" />
+        <img src="<?php echo $user->getProfile()->getUserAvatar(64) ?>" alt="<?php echo $user->getFullName(); ?>" />
     </dt>
 </dl>
 <dl>

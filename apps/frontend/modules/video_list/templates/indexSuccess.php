@@ -1,5 +1,8 @@
-
-<div>
+<?php include_partial("video_list/subMenu"); ?>
+<aside>
+    <?php include_partial("video_list/menuTree"); ?>
+</aside>
+<div class="content">
     <ul class="video-prewiev">
         <?php foreach($videos->getResults() as $video): ?>
         <li style="float: left; " class="mouse_move">

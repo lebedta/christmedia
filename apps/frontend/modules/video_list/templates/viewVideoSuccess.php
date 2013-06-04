@@ -1,31 +1,37 @@
-<h2><?php echo $video->getTitle(); ?> </h2>
+<?php include_partial("video_list/subMenu"); ?>
+<aside>
+    <?php include_partial("video_list/menuTree"); ?>
+</aside>
+<div class="content">
+    <h2><?php echo $video->getTitle(); ?> </h2>
 
-<div id="page">
+    <div id="page">
 
-    <a href="<?php echo '/uploads/video/'.$video->getFile() ?>"
-       style="display:block;width:635px;height:481px" id="player"></a>
+        <a href="<?php echo '/uploads/video/'.$video->getFile() ?>"
+           style="display:block;width:635px;height:481px" id="player"></a>
 
-    <script type="text/javascript" src="/flowplayer/flowplayer.js"></script>
+        <script type="text/javascript" src="/flowplayer/flowplayer.js"></script>
 
-</div>
+    </div>
 
-<h4><?php echo $video->getDescription(); ?> </h4>
-<div id="star_<?php echo $video->getId(); ?>" class="star"></div>
+    <h4><?php echo $video->getDescription(); ?> </h4>
+    <div id="star_<?php echo $video->getId(); ?>" class="star"></div>
 
-<span class="view" >
-    Просмотров: <?php echo $video->getVideoWatching()->count(); ?>
-</span>
+    <span class="view" >
+        Просмотров: <?php echo $video->getVideoWatching()->count(); ?>
+    </span>
 
-<div class="comment">
-    <?php include_component('comment', 'list', array('object' => $video, 'i' => 0)) ?>
-    <?php if (sfContext::getInstance()->getUser()->isAuthenticated()): ?>
-        <a class="btn btn-light-grey pop-up_form new_comment_form" href="#comment_form">Новый комент</a>
-        <div style="display: none;">
-            <div id="comment_form" >
-                <?php include_component('comment', 'formComment', array('object' => $video)) ?>
+    <div class="comment">
+        <?php include_component('comment', 'list', array('object' => $video, 'i' => 0)) ?>
+        <?php if (sfContext::getInstance()->getUser()->isAuthenticated()): ?>
+            <a class="btn btn-light-grey pop-up_form new_comment_form" href="#comment_form">Новый комент</a>
+            <div style="display: none;">
+                <div id="comment_form" >
+                    <?php include_component('comment', 'formComment', array('object' => $video)) ?>
+                </div>
             </div>
-        </div>
-    <?php endif; ?>
+        <?php endif; ?>
+    </div>
 </div>
 <?php if (!sfContext::getInstance()->getUser()->isAuthenticated()): ?>
     <script type="text/javascript">
