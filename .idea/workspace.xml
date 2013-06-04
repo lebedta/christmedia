@@ -10,12 +10,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/_z.cfs" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments_16" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments_1r" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/index/MyIndex/ru/segments.gen" afterPath="$PROJECT_DIR$/data/index/MyIndex/ru/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/model/doctrine/Video.class.php" afterPath="$PROJECT_DIR$/lib/model/doctrine/Video.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_searchResult.php" afterPath="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_searchResult.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/doctrine/schema.yml" afterPath="$PROJECT_DIR$/config/doctrine/schema.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/search.yml" afterPath="$PROJECT_DIR$/config/search.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/frontend/modules/video/config/security.yml" afterPath="$PROJECT_DIR$/apps/frontend/modules/video/config/security.yml" />
     </list>
     <ignored path="Blueprint.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,6 +46,7 @@
     <file path="/_searchResult.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370379460507" ignored="false" />
     <file path="/Video.class.php" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370379165148" ignored="false" />
     <file path="/search.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370376789499" ignored="false" />
+    <file path="/security.yml" changelist="446ced58-7226-49b6-8d41-c891a6b06059" time="1370379595780" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,10 +84,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actions.class.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="actions.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.2402746">
+            <state line="40" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-4.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="17" selection-start="26" selection-end="26" vertical-scroll-proportion="0.03253796">
               <folding />
             </state>
           </provider>
@@ -151,15 +156,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/doctrine/schema.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="84" selection-start="3319" selection-end="3319" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -178,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/apps/backend/modules/category/actions/actions.class.php" />
         <option value="$PROJECT_DIR$/lib/plugins/sfDoctrinePlugin/lib/form/sfFormDoctrine.class.php" />
         <option value="$PROJECT_DIR$/apps/backend/config/factories.yml" />
         <option value="$PROJECT_DIR$/apps/backend/config/settings.yml" />
@@ -194,6 +189,7 @@
         <option value="$PROJECT_DIR$/lib/model/doctrine/Video.class.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/templates/_searchResult.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php" />
+        <option value="$PROJECT_DIR$/apps/frontend/modules/video/config/security.yml" />
       </list>
     </option>
   </component>
@@ -590,11 +586,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="profiler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="video" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -620,11 +612,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="profiler" />
+              <option name="myItemId" value="video" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -839,13 +831,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/frontend/templates/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="2583" selection-end="2583" vertical-scroll-proportion="-13.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/templates/indexSuccess.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="139" vertical-scroll-proportion="-0.0">
@@ -973,7 +958,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video_list/actions/actions.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.2402746">
+        <state line="40" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/frontend/modules/video/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="17" selection-start="26" selection-end="26" vertical-scroll-proportion="0.03253796">
           <folding />
         </state>
       </provider>
