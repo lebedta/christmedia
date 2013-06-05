@@ -14,4 +14,4 @@ data/sql/schema.sql
 
 web/uploads/*
 
-dara/index/*
+data/index/*
