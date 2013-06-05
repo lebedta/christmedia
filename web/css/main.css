@@ -192,10 +192,7 @@ header {
     border-bottom: 1px solid #2D5AC3;
     height: 42px;
 }
-.login-form.clicked {
-    height: 140px;
-    outline: 2px solid #D8D8D8;
-}
+
 .login-form a {
     display: block;
     float: left;
@@ -360,7 +357,15 @@ aside {
     font-size:14px;
     text-decoration: none;
 }
+.treeview .hover {
+    color: #0000bb !important;
+}
 
+.treeview a.selected {
+    color: darkred;
+    text-decoration: underline;
+    background-color: #3399CC !important;
+}
 
 /*------------------------------------------------------------------------*/
 /*---------------------------------signIN FORM----------------------------*/
@@ -478,6 +483,10 @@ form#this_form fieldset dd input[type='text'],
 form#this_form fieldset dd input[type='password'],
 form#this_form fieldset dd textarea{
     width:260px;}
+form#this_form fieldset dd input#video_filming_date {
+    margin-right: 5px;
+    width: 240px;
+}
 
  /*------------------------------------------------------------------------*/
 /*---------------------------------SEARCH FORM-----------------------------*/
@@ -516,6 +525,7 @@ form.search-controls input[type="submit"] {
     text-transform: uppercase;
     padding: 4px 0 0;
     width: auto;
+    min-width: auto;
 }
 
 form.search-controls select {
