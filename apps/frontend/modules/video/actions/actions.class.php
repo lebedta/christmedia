@@ -23,7 +23,7 @@ class videoActions extends sfActions
           "status" => "false");
 
       $this->form = new VideoForm();
-
+      $this->form->setDefault('user_id',sfContext::getInstance()->getUser()->getGuardUser()->getId());
       if($request->isMethod("post"))
       {
           $this->form->bind($request->getParameter($this->form->getName()), $request->getFiles($this->form->getName()));
