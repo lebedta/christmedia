@@ -45,7 +45,7 @@ $f("player", "/flowplayer/flowplayer.commercial-3.2.7.swf",
                 autoHide: 'never'
             },
 
-            content: {
+            /*content: {
                 url: '/flowplayer/flowplayer.content-3.2.0.swf',
                 height: 80,
                 width: 450,
@@ -57,7 +57,7 @@ $f("player", "/flowplayer/flowplayer.commercial-3.2.7.swf",
                 backgroundGradient: [0.1, 0.1, 1.0],
                 html: " ChristMedia",
                 style: {p: {fontSize: 17}}
-            },
+            },*/
             sharing: {
                 url: '/flowplayer/flowplayer.sharing-3.2.1.swf'/*,
                 embed: {
