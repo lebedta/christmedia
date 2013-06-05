@@ -1,5 +1,5 @@
 <aside>
-    
+
 </aside>
 <div class="content">
     <h2>Загрузка видео</h2>

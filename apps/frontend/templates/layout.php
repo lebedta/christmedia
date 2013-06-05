@@ -68,10 +68,10 @@
           <footer>
               <div class="wrapper">
                   <div class="footer_video">
-                      <img src="images/bottom_video.jpg" width="181" height="85" alt="bottom_video">
-                      <img src="images/bottom_video.jpg" width="181" height="85" alt="bottom_video">
-                      <img src="images/bottom_video.jpg" width="181" height="85" alt="bottom_video">
-                      <img src="images/bottom_video.jpg" width="181" height="85" alt="bottom_video">
+                      <img src="/images/bottom_video.jpg" width="181" height="85" alt="bottom_video">
+                      <img src="/images/bottom_video.jpg" width="181" height="85" alt="bottom_video">
+                      <img src="/images/bottom_video.jpg" width="181" height="85" alt="bottom_video">
+                      <img src="/images/bottom_video.jpg" width="181" height="85" alt="bottom_video">
                   </div>
                   <p>@ Christmedia.org-Христианское видео онлайн 2011</p>
                   <p>Exclusive Hosting Partner-ValcoHosting </p>
