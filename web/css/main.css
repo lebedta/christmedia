@@ -64,6 +64,7 @@ h4{
 
 h1, h2 {
     padding: 10px;
+    padding-left: 0;
     letter-spacing:-1px;
     color:#2D5AC3;
     font-weight:normal;
@@ -257,10 +258,10 @@ nav ul li a:hover, .menu ul li a:active {
 
 .sub_menu
 {  height:50px;
-    background: url("../images/sub-menu-border-bottom.jpg") 0 bottom no-repeat;
-    -moz-box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6); /* Для Firefox */
-    -webkit-box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6); /* Для Safari и Chrome */
-    box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6);	/* Параметры тени */
+   background: url("../images/sub-menu-border-bottom.jpg") 0 bottom no-repeat;
+   -moz-box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6); /* Для Firefox */
+   -webkit-box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6); /* Для Safari и Chrome */
+   box-shadow: 0 20px 20px 0 rgba(255,255,255,0.6);	/* Параметры тени */
 }
 .sub_menu ul {
     list-style-type:none;
@@ -372,6 +373,7 @@ aside {
 /*------------------------------------------------------------------------*/
 form{
     padding: 10px;
+    padding-left: 0;
     width: 100%;
 }
 
@@ -706,7 +708,16 @@ form.search-controls .fake-select {
     position: relative;
     overflow: hidden;
 }
-
+/*----------------------------------------------------------------------------*/
+/*-----------------------------SEARCH RESULTS---------------------------------*/
+/*----------------------------------------------------------------------------*/
+.search_result_img{
+    padding: 5px 20px 5px 0;
+    float:left;
+}
+.search_result_title, .search_result_description, .search_result_creator{
+    padding: 5px;
+}
 .view{
     float:right;
     margin-right:10px;
