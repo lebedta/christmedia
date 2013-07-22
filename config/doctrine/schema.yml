@@ -35,7 +35,7 @@ Video:
     description:        { type: text, notnull: true }
     file:               { type: string(255), notnull: true }
     date_upload:        { type: datetime, notnull: true }
-    user_id:            { type: integer, unique: true }
+    user_id:            { type: integer }
     duration:           { type: integer }
     desc_file:          { type: string(255), notnull: false }
     is_active:          { type: boolean, default: false }
@@ -47,7 +47,7 @@ Video:
     filming_date:       { type: date, notnull: false }
     filming_place:     { type: string(255), notnull: false }
   relations:
-    sfGuardUser:        { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: sfGuardUser }
+    VideoCreator:       { local: user_id, foreign: id, class: sfGuardUser }
     Youtube:            { onDelete: CASCADE, local: id, foreign: video_id, foreignAlias: Youtube, type: one }
     Category:           { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: Category }
   actAs:

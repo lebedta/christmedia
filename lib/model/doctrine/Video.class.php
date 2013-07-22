@@ -61,7 +61,7 @@ class Video extends BaseVideo
 
     public function getCreator()
     {
-        return $this->getSfGuardUser()->getFullName();
+        return $this->getVideoCreator()->getFullName();
     }
 
     public function getScrinshot()

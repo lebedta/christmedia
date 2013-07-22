@@ -7,10 +7,18 @@
 
     <div id="page">
 
-        <a href="<?php echo '/uploads/video/'.$video->getFile() ?>"
-           style="display:block;width:635px;height:481px" id="player"></a>
+       <?php
+        $video_name = substr($video->getFile(), strrpos($video->getFile(), '/'));
+        $temp = explode('.', $video_name);
+        ?>
 
-        <script type="text/javascript" src="/flowplayer/flowplayer.js"></script>
+        <div class="flowplayer" data-swf="/html5_flowplayer/flowplayer.swf" data-key="$289122895653393" data-ratio="0.417">
+            <video>
+                <source type="video/webm" src="<?php echo '/uploads/video/'.$temp[0].'.webm' ?>"/>
+                <source type="video/mp4"  src="<?php echo '/uploads/video/'.$temp[0].'.mp4' ?>"/>
+                <source type="video/ogv"  src="<?php echo '/uploads/video/'.$temp[0].'.ogv' ?>"/>
+            </video>
+        </div>
 
     </div>
 

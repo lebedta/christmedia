@@ -12,6 +12,7 @@ class VideoForm extends BaseVideoForm
 {
     public function configure()
     {
+        //$this->widgetSchema['user_id'] = new sfWidgetFormInputHidden();
         $this->widgetSchema['title'] = new sfWidgetFormInput();
         $this->widgetSchema['description'] = new sfWidgetFormTextarea();
         $this->widgetSchema['file'] = new sfWidgetFormInputFile(array('label' => 'Видео'));
@@ -65,7 +66,7 @@ class VideoForm extends BaseVideoForm
 
         $this->getObject()->setDateUpload(date('Y-m-d H:m:s'));
 
-        if($temp[1] == 'flv')
+        if($temp[1] == 'mp4')
         {
             $this->getObject()->setIsActive(true);
             $this->getObject()->setStatus('complete');
@@ -75,7 +76,7 @@ class VideoForm extends BaseVideoForm
         }
         else
         {
-            $this->getObject()->getIsActive(false);
+            $this->getObject()->setIsActive(false);
             $this->getObject()->setStatus('convert');
             $this->getObject()->setIsConverted(true);
             $this->getObject()->setDuration($total);
