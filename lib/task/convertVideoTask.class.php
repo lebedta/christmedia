@@ -53,7 +53,7 @@ EOF;
           $video->setIsEdit(true);
           $video_name = substr($video['file'], strrpos($video['file'], '/') +1);
           $temp = explode('.', $video_name);
-          if($temp[1] != 'glv')
+          if($temp[1] != 'mp4')
           {
               $new_name = $temp[0].".mp4";
               $path = sfConfig::get('sf_upload_dir').'/video/';
