@@ -27,6 +27,15 @@ Call it with:
 EOF;
   }
 
+  private function call_log($message)
+  {
+      $path = sfConfig::get('sf_log_dir') . '/convertvideo.log';
+
+      $iteration = date('Y-m-d H:i:s') . ":  " . $message . "\n";
+      file_put_contents($path, $iteration, FILE_APPEND);
+      echo "\n\n $iteration \n\n";
+  }
+
   protected function execute($arguments = array(), $options = array())
   {
       // initialize the database connection
@@ -35,6 +44,8 @@ EOF;
 
       // add your code here
       $videos = VideoTable::getConvertVideo();
+
+      self::call_log('Cron task was successfully started.');
 
       foreach($videos as $video)
       {
@@ -72,6 +83,7 @@ EOF;
               //unlink($path.$old_name);
           }
       }
+      self::call_log('Cron task was successfully finished.');
   }
 
 }

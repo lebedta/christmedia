@@ -27,6 +27,16 @@ Call it with:
 EOF;
     }
 
+    private function call_log($message)
+    {
+        $path = sfConfig::get('sf_log_dir') . '/createscrinshot.log';
+
+        $iteration = date('Y-m-d H:i:s') . ":  " . $message . "\n";
+        file_put_contents($path, $iteration, FILE_APPEND);
+        echo "\n\n $iteration \n\n";
+    }
+
+
     protected function execute($arguments = array(), $options = array())
     {
         // initialize the database connection
@@ -40,6 +50,9 @@ EOF;
         $temp = false;
         /* set default count scrinshot */
         $count_scrinshot = 5;
+
+        self::call_log('Cron task was successfully started.');
+
         foreach($videos as $video)
         {
             $filename= sha1($video->getTitle().rand(11111, 99999));
@@ -58,6 +71,7 @@ EOF;
                         $command="ffmpeg -i ".$video_path.$video->getFile()." -s 120x90 -ss ".$duration_L." -vframes 1 ".$path.$filename.$i.".png";
                         exec($command . ' 2>&1', $output);
                         echo $command;
+                        self::call_log($command);
                         $scrrinshot = new Scrinshot();
                         $scrrinshot->setFile($filename.$i.".png");
                         $scrrinshot->setVideoId($video->getId());
@@ -71,6 +85,7 @@ EOF;
                     $command="ffmpeg -i ".$video_path.$video->getFile()." -s 120x90  -ss 0 -vframes 1 ".$path.$filename.".png";
                     exec($command . ' 2>&1', $output);
                     echo $command;
+                    self::call_log($command);
                     $scrrinshot = new Scrinshot();
 
                     $scrrinshot->setFile($filename.".png");
@@ -88,5 +103,6 @@ EOF;
                 $video->save();
             }
         }
+        self::call_log('Cron task was successfully finished.');
     }
 }
