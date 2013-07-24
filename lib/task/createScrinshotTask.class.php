@@ -71,7 +71,7 @@ EOF;
                         $command="ffmpeg -i ".$video_path.$video->getFile()." -s 120x90 -ss ".$duration_L." -vframes 1 ".$path.$filename.$i.".png";
                         exec($command . ' 2>&1', $output);
                         echo $command;
-                        self::call_log($command);
+                        self::call_log($command.'/<br>'.$output);
                         $scrrinshot = new Scrinshot();
                         $scrrinshot->setFile($filename.$i.".png");
                         $scrrinshot->setVideoId($video->getId());
@@ -85,7 +85,7 @@ EOF;
                     $command="ffmpeg -i ".$video_path.$video->getFile()." -s 120x90  -ss 0 -vframes 1 ".$path.$filename.".png";
                     exec($command . ' 2>&1', $output);
                     echo $command;
-                    self::call_log($command);
+                    self::call_log($command.'/<br>'.$output);
                     $scrrinshot = new Scrinshot();
 
                     $scrrinshot->setFile($filename.".png");
