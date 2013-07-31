@@ -53,15 +53,19 @@ EOF;
           $video->setIsEdit(true);
           $video_name = substr($video['file'], strrpos($video['file'], '/') +1);
           $temp = explode('.', $video_name);
-          if($temp[1] != 'mp4')
+          if($temp[1] != 'glvdd')
           {
               $new_name = $temp[0].".mp4";
               $path = sfConfig::get('sf_upload_dir').'/video/';
 
-              /*For mp4 (H.264 / ACC):*/
-              $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f mp4 -s 624x260 ".$path.$new_name;
-              exec($command . ' 2>&1', $output);
-              echo $command;
+              if($temp[1] != 'mp4')
+              {
+                  /*For mp4 (H.264 / ACC):*/
+                  $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f mp4 -s 624x260 -strict experimental".$path.$new_name;
+                  exec($command . ' 2>&1', $output);
+                  echo $command;
+              }
+              
 
               /*For webm (VP8 / Vorbis):*/
               $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f webm -s 624x260 ".$path.$temp[0].".webm";
@@ -69,7 +73,6 @@ EOF;
               echo $command;
 
               /*For ogv (Theora / Vorbis):*/
-//              ffmpeg -i "INPUTFILE" -b 1500k -vcodec libtheora -acodec libvorbis -ab 160000 -g 30 "OUTPUTFILE.ogv"
               $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -vcodec libtheora -acodec libvorbis -ab 160000 -s 624x260 ".$path.$temp[0].".ogv";
               exec($command . ' 2>&1', $output);
               echo $command;
