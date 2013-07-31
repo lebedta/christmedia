@@ -61,11 +61,11 @@ EOF;
               if($temp[1] != 'mp4')
               {
                   /*For mp4 (H.264 / ACC):*/
-                  $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f mp4 -s 624x260 -strict experimental".$path.$new_name;
+                  $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f mp4 -s 624x260 -strict experimental ".$path.$temp[0].".mp4";
                   exec($command . ' 2>&1', $output);
                   echo $command;
               }
-              
+
 
               /*For webm (VP8 / Vorbis):*/
               $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f webm -s 624x260 ".$path.$temp[0].".webm";
