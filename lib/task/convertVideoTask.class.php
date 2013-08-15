@@ -77,7 +77,7 @@ EOF;
               $video->setIsConverted(false);
               $video->setStatus('complete');
               $video->setIsEdit(false);
-              $video->setIsActive(true);
+              //$video->setIsActive(true);
               $video->save();
               //unlink($path.$old_name);
           }

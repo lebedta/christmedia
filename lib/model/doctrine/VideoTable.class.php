@@ -67,6 +67,7 @@ class VideoTable extends Doctrine_Table
             ->from("Video")
             ->where("is_converted = ?", true)
             ->addWhere("is_edit = ?", false)
+            ->limit(1)
             ->execute();
 
     }
@@ -77,7 +78,7 @@ class VideoTable extends Doctrine_Table
             ->select('*')
             ->from('Video')
             ->where("is_converted = ?", false)
-            ->addWhere("is_active = ?", true)
+            ->addWhere("is_edit = ?", false)
             ->addWhere('is_scrinshot = ?', false)
             ->execute();
     }

@@ -100,6 +100,7 @@ EOF;
             if($temp == true)
             {
                 $video->setIsScrinshot(true);
+                $video->setIsActive(true);
                 $video->save();
             }
         }
