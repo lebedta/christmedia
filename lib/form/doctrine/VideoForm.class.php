@@ -71,23 +71,6 @@ class VideoForm extends BaseVideoForm
         $this->getObject()->setIsConverted(true);
         $this->getObject()->setDuration($total);
         $this->getObject()->save();
-
-//        if($temp[1] == 'mp4')
-//        {
-//            $this->getObject()->setIsActive(true);
-//            $this->getObject()->setStatus('odidcomplete');
-//            $this->getObject()->setIsConverted(false);
-//            $this->getObject()->setDuration($total);
-//            $this->getObject()->save();
-//        }
-//        else
-//        {
-//            $this->getObject()->setIsActive(false);
-//            $this->getObject()->setStatus('convert');
-//            $this->getObject()->setIsConverted(true);
-//            $this->getObject()->setDuration($total);
-//            $this->getObject()->save();
-//        }
     }
 
 

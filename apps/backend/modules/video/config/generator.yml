@@ -13,11 +13,17 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
+      fields:
+        user_id: {label: "Creator"}
+        is_scrinshot: { label: 'scrinshot'}
       list:
         title: Videos
-        display: [=title, description, sfGuardUser, category, duration, is_active, is_scrinshot ]
-      filter:  ~
-      form:    ~
-      edit:    ~
-      new:     ~
+        display: [=title, description, VideoCreator, category, duration, is_active, is_scrinshot ]
+      filter:
+        display: [title, description, user_id, category_id, duration, is_active]
+      form:
+        class: AdminVideoForm
+      edit:
+        display: [title, description, user_id, category_id, is_active ]
+      new:
+        display: [title, description, user_id, category_id, is_active ]
