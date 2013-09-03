@@ -196,7 +196,7 @@ header {
 
 .login-form a {
     display: block;
-    float: left;
+    float: right;
     text-transform: capitalize;
     color: #333;
     text-decoration: none;
@@ -728,4 +728,52 @@ form.search-controls .fake-select {
 }
 .footer_video{
     margin-bottom: 15px;
+}
+
+.video_title {
+    padding-left: 12px;
+}
+.tr_reply_author, .delete_reply {
+    display: none !important;
+}
+
+#fancybox-wrap, #fancybox-outer, #fancybox-content {
+    border-radius: 5px 5px 5px 5px;
+    margin: 0;
+    height: 260px !important;
+}
+.form-comment form fieldset legend, .send-additional-message h1 {
+    border-bottom: 1px solid #999999;
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+.form-comment form fieldset table td label {
+    display: block;
+    margin: 10px 15px 0px 5px;
+    text-align: left;
+
+}
+.form-comment form fieldset table td textarea {
+    border: 1px solid #A2A2A2;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    font: 12px/150% Helvetica;
+    margin:5px;
+    max-height: 220px;
+    max-width: 300px;
+    padding: 7px;
+    width: 300px;
+}
+.form-comment form fieldset table td input[type="submit"] {
+   margin-left:5px;
+   }
+
+.new_comment_form{
+    display: block;
+    font-size: 14px;
+    padding: 10px 2px;
 }

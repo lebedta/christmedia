@@ -15,7 +15,7 @@
                         <?php endforeach; ?>
 
                     </div>
-                    <?php echo $video->getTitle(); ?>
+                    <span class="video_title"> <?php echo $video->getTitle(); ?> </span>
                 </a>
 
             </span>
