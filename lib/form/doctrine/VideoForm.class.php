@@ -58,7 +58,7 @@ class VideoForm extends BaseVideoForm
         $temp = explode('.', $video_name);
 
         //get duration uploaded video
-        $cmd = "ffmpeg -i " . $video . " 2>&1";
+        $cmd = "avconv -i " . $video . " 2>&1";
         exec($cmd);
         if (preg_match('/Duration: ((\d+):(\d+):(\d+))/s', `$cmd`, $time)) {
             $total = ($time[2] * 3600) + ($time[3] * 60) + $time[4];

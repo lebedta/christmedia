@@ -68,7 +68,7 @@ EOF;
                         $duration_L = $duration_L + $count;
                         $filename= sha1($video->getTitle().rand(11111, 99999));
                         //scrinshot
-                        $command="ffmpeg -i ".$video_path.$video->getFile()." -s 120x90 -ss ".$duration_L." -vframes 1 ".$path.$filename.$i.".png";
+                        $command="avconv -i ".$video_path.$video->getFile()." -s 120x90 -ss ".$duration_L." -vframes 1 ".$path.$filename.$i.".png";
                         exec($command . ' 2>&1', $output);
                         echo $command;
                         self::call_log($command.'/<br>'.$output);
@@ -82,7 +82,7 @@ EOF;
                 else
                 {
                     //scrinshot
-                    $command="ffmpeg -i ".$video_path.$video->getFile()." -s 120x90  -ss 0 -vframes 1 ".$path.$filename.".png";
+                    $command="avconv -i ".$video_path.$video->getFile()." -s 120x90  -ss 0 -vframes 1 ".$path.$filename.".png";
                     exec($command . ' 2>&1', $output);
                     echo $command;
                     self::call_log($command.'/<br>'.$output);

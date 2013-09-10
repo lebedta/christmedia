@@ -49,27 +49,30 @@ EOF;
 
       foreach($videos as $video)
       {
-          $old_name = $video['file'];
           $video->setIsEdit(true);
-          $video_name = substr($video['file'], strrpos($video['file'], '/') +1);
+          $video_name = $video['file'];//substr($video['file'], strrpos($video['file'], '/') +1);
           $temp = explode('.', $video_name);
+          $new_video_name = sha1(($video['title']).rand(11111, 99999));
           if($temp[1] != 'glvdd')
           {
-              $new_name = $temp[0].".mp4";
+              $new_name = $new_video_name.".mp4";
               $path = sfConfig::get('sf_upload_dir').'/video/';
 
-              /*For mp4 (H.264 / ACC):*/
-              $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f mp4 -s 624x260 -strict experimental ".$path.$temp[0].".mp4";
+              /*For mp4*/
+              //$command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f mp4 -s 624x260 -strict experimental ".$path.$temp[0].".mp4";
+              $command="avconv -i ".$path.$video['file']." -strict experimental -s 624x260 ".$path.$new_video_name.".mp4";
               exec($command . ' 2>&1', $output);
               echo $command;
 
-              /*For webm (VP8 / Vorbis):*/
-              $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f webm -s 624x260 ".$path.$temp[0].".webm";
+              /*For webm*/
+              //$command="ffmpeg -i ".$path.$video['file']." -ar 22050 -f webm -s 624x260 ".$path.$temp[0].".webm";
+              $command="avconv -i ".$path.$video['file']." -strict experimental -s 624x260 ".$path.$new_video_name.".webm";
               exec($command . ' 2>&1', $output);
               echo $command;
 
-              /*For ogv (Theora / Vorbis):*/
-              $command="ffmpeg -i ".$path.$video['file']." -ar 22050 -vcodec libtheora -acodec libvorbis -ab 160000 -s 624x260 ".$path.$temp[0].".ogv";
+              /*For ogv*/
+              //$command="ffmpeg -i ".$path.$video['file']." -ar 22050 -vcodec libtheora -acodec libvorbis -ab 160000 -s 624x260 ".$path.$temp[0].".ogv";
+              $command="avconv -i ".$path.$video['file']." -strict experimental -s 624x260 ".$path.$new_video_name.".ogv";
               exec($command . ' 2>&1', $output);
               echo $command;
 
