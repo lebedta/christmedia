@@ -35,4 +35,10 @@ class sfGuardUser extends PluginsfGuardUser
         return $this->getfirstName().' '.$this->getLastName();
     }
 
+    public function changePassword($new_password)
+    {
+        $this->setPassword($new_password);
+        $this->save();
+    }
+
 }

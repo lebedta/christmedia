@@ -54,6 +54,10 @@ Video:
     Timestampable: ~
     Commentable:
     sfLuceneDoctrineTemplate: ~
+    Sluggable:
+      unique: true
+      name: slug
+      fields:  [title]
 
 Youtube:
   columns:
