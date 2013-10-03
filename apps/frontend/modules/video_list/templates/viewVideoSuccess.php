@@ -12,8 +12,8 @@
         $temp = explode('.', $video_name);
         ?>
 
-        <div class="flowplayer" data-swf="/html5_flowplayer/flowplayer.swf" data-key="$289122895653393" data-ratio="0.417">
-            <video id=1>
+        <div class="flowplayer" data-swf="/html5_flowplayer/flowplayer.swf" data-key="$289122895653393" data-ratio="<?php echo $video->getDataRation()>0 ?  $video->getDataRation() : '0.5625' ?> ">
+            <video>
                 <source type="video/webm" src="<?php echo '/uploads/video/'.$temp[0].'.webm' ?>"/>
                 <source type="video/mp4"  src="<?php echo '/uploads/video/'.$temp[0].'.mp4' ?>"/>
                 <source type="video/ogg"  src="<?php echo '/uploads/video/'.$temp[0].'.ogv' ?>"/>

@@ -46,6 +46,7 @@ Video:
     category_id:        { type: integer }
     filming_date:       { type: date, notnull: false }
     filming_place:     { type: string(255), notnull: false }
+    data_ration:       { type: decimal }
   relations:
     VideoCreator:       { local: user_id, foreign: id, class: sfGuardUser }
     Youtube:            { onDelete: CASCADE, local: id, foreign: video_id, foreignAlias: Youtube, type: one }

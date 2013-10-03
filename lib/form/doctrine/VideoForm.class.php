@@ -58,10 +58,24 @@ class VideoForm extends BaseVideoForm
         $temp = explode('.', $video_name);
 
         //get duration uploaded video
-        $cmd = "avconv -i " . $video . " 2>&1";
+        $cmd = "ffmpeg -i " . $video . " 2>&1";
         exec($cmd);
         if (preg_match('/Duration: ((\d+):(\d+):(\d+))/s', `$cmd`, $time)) {
             $total = ($time[2] * 3600) + ($time[3] * 60) + $time[4];
+        }
+
+        $data_ration = null;
+
+        if (!preg_match('/Stream #(?:[0-9\.]+)(?:.*)\: Video: (?P<videocodec>.*) (?P<width>[0-9]*)x(?P<height>[0-9]*)/',`$cmd`,$matches))
+        {
+            preg_match('/Could not find codec parameters \(Video: (?P<videocodec>.*) (?P<width>[0-9]*)x(?P<height>[0-9]*)\)/',`$cmd`,$matches);
+        }
+        if(!empty($matches['width']) && !empty($matches['height']))
+        {
+//            $dimensions['width'] = $matches['width'];
+//            $dimensions['height'] = $matches['height'];
+
+            $data_ration = $matches['height']/$matches['width'];
         }
 
         $this->getObject()->setDateUpload(date('Y-m-d H:m:s'));
@@ -70,6 +84,7 @@ class VideoForm extends BaseVideoForm
         $this->getObject()->setStatus('convert');
         $this->getObject()->setIsConverted(true);
         $this->getObject()->setDuration($total);
+        $this->getObject()->setDataRation(round($data_ration, 3));
         $this->getObject()->save();
     }
 

@@ -3,7 +3,7 @@
         <?php echo image_tag($result->getScrinshot()); ?>
     </div>
     <div class="search_result_title">
-        <?php echo link_to($result->getTitle(), "@view_video?video_id=".$result->getId()); ?>
+        <?php echo link_to($result->getTitle(), "@view_video?video_slug=".$result->getSlug()); ?>
     </div>
     <div class="search_result_description">
         <?php echo $result->getDescription(); ?>

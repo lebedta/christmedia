@@ -34,8 +34,8 @@ class video_listActions extends sfActions
 
     public function executeViewVideo(sfWebRequest $request)
     {
-        $video_id = $request->getUrlParameter('video_id');
-        $this->video = Doctrine_Core::getTable('Video')->find($video_id);
+        $video_slug = $request->getUrlParameter('video_slug');
+        $this->video = Doctrine_Core::getTable('Video')->findOneBy('slug', $video_slug);
         $this->forward404Unless($this->video, "Video not exist");
 
 

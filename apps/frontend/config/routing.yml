@@ -7,7 +7,7 @@ videos:
     param: { module: video_list, action: index, order: 'd', category: null }
 
 view_video:
-    url: /video_view/:video_id
+    url: /video_view/:video_slug
     param: { module: video_list, action: viewVideo }
 
 vote_video:

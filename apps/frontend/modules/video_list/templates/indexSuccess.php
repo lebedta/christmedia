@@ -7,7 +7,7 @@
         <?php foreach($videos->getResults() as $video): ?>
         <li style="float: left; " class="mouse_move">
             <span>
-                <a href="<?php echo url_for('@view_video?video_id='.$video->getId()); ?>">
+                <a href="<?php echo url_for('@view_video?video_slug='.$video->getSlug()); ?>">
                     <div id="sl_<?php echo $video->getId(); ?>" style="" class="slider_JS">
 
                         <?php foreach($video->getScrinshots() as $scrinshot): ?>
