@@ -22,14 +22,8 @@ class video_listActions extends sfActions
         $this->category = $request->getUrlParameter('category', null);
 
         $videos = VideoTable::getVideos($this->order, $this->category);
-        $items_display = 6;
+        $this->videos = $videos->limit(6)->execute();
 
-        $this->videos = new sfDoctrinePager('Video', $items_display);
-        $this->videos->setQuery($videos);
-        $this->videos->setPage($request->getParameter('page_idea', 1));
-        $this->videos->init();
-
-        //$this->categories = CategoryTable::getParentCategories();
     }
 
     public function executeViewVideo(sfWebRequest $request)
@@ -79,5 +73,19 @@ class video_listActions extends sfActions
         }
         $this->renderText(json_encode($result));
         return sfView::NONE;
+    }
+
+    public function executeAjaxLoad(sfWebRequest $request)
+    {
+        if($request->isMethod('post')){
+            $count = $request->getParameter('count');
+            $order = $request->getParameter('order');
+            $category = $request->getParameter('category');
+            $videos = VideoTable::getVideos($order, $category);
+            $this->videos = $videos->limit(3)->offset($count)->execute();
+
+            $this->renderPartial('list_video', array('videos'=>$this->videos));
+            return sfView::NONE;
+        }
     }
 }
