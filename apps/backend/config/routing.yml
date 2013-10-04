@@ -83,3 +83,7 @@ default_index:
 
 default:
   url:   /:module/:action/*
+
+forgot_password:
+  url: /forgot-password
+  param: { module: home, action: forgotPassword }
