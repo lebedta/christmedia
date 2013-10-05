@@ -24,6 +24,6 @@ generator:
       form:
         class: AdminVideoForm
       edit:
-        display: [title, description, user_id, category_id, is_active ]
+        display: [title, description, user_id, category_id, duration, is_active ]
       new:
-        display: [title, description, user_id, category_id, is_active ]
+        display: [title, description, user_id, category_id, duration, is_active ]

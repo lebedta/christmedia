@@ -12,6 +12,6 @@ class AdminVideoForm extends BaseVideoForm
 {
     public function configure()
     {
-        unset($this["file"], $this['created_at'], $this['updated_at'], $this['duration'], $this['is_scrinshot'], $this['status']);
+        unset($this["file"], $this['created_at'], $this['updated_at'], $this['is_scrinshot'], $this['status']);
     }
 }
