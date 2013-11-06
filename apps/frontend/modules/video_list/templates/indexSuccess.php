@@ -5,9 +5,9 @@
 <div class="content">
     <ul class="video-prewiev">
         <?php foreach($videos as $video): ?>
-            <li style="float: left; " class="mouse_move">
+            <li style="float: left; " class="mouse_move" data-href="<?php echo url_for('@view_video?video_slug='.$video->getSlug()); ?>">
                 <span>
-                    <a href="<?php echo url_for('@view_video?video_slug='.$video->getSlug()); ?>">
+                    <a style="display: block;" href="<?php echo url_for('@view_video?video_slug='.$video->getSlug()); ?>">
                         <div id="sl_<?php echo $video->getId(); ?>" style="" class="slider_JS">
 
                             <?php foreach($video->getScrinshots() as $scrinshot): ?>
@@ -30,6 +30,7 @@
 
 <script type="text/javascript">
     jQuery(document).ready(function(){
+
         var lim = true;
         base();
 
