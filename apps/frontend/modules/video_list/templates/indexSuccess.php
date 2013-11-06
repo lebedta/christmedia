@@ -58,7 +58,7 @@
                 $.ajax({
                     url: url,
                     type: "POST",
-                    data: {"count" : jQuery(".video-prewiev li").length, "order" : <?php echo $order ? "'".$order."'" : '' ?> <?php echo $category ? ',category: '."'".$category."'" : '' ?>},
+                    data: {"count" : jQuery(".video-prewiev li").length, "order" : <?php echo $order ? "'".$order."'" : 'd' ?> <?php echo $category ? ',category: '."'".$category."'" : '' ?>},
                     success:function (data) {
                         jQuery('.video-prewiev').append(data);
                         base();
